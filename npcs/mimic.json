@@ -1,0 +1,309 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 17
+    },
+    {
+      "name": "dex",
+      "value": 12
+    },
+    {
+      "name": "con",
+      "value": 15
+    },
+    {
+      "name": "int",
+      "value": 5
+    },
+    {
+      "name": "wis",
+      "value": 13
+    },
+    {
+      "name": "cha",
+      "value": 8
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait.",
+      "name": "Pseudopod",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d8",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Pseudopod"
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 4 (1d8) acid damage.",
+      "name": "Bite",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d8",
+                "type": "Piercing"
+              },
+              {
+                "dice": "1d8",
+                "type": "Acid"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Bite"
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Neutral",
+  "armorClass": 12,
+  "armorType": "Natural Armor",
+  "challengeRating": "2",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "conditionImmunities": [
+    "Prone"
+  ],
+  "currentHp": 58,
+  "damageImmunities": [
+    {
+      "damageType": "Acid"
+    }
+  ],
+  "exp": 450,
+  "hitDice": "9d8+18",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/monstrosity-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "maxHp": 58,
+  "movementModes": [
+    {
+      "distance": 15,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Mimic",
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Medium",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "doubleProficiency": true,
+      "name": "Stealth",
+      "proficient": true
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",
+          "title": "Shapechanger"
+        },
+        {
+          "body": "The mimic has advantage on attack rolls against any creature grappled by it.",
+          "title": "Grappler"
+        },
+        {
+          "body": "The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 13). Ability checks made to escape this grapple have disadvantage.",
+          "title": "Adhesive (Object Form Only)"
+        },
+        {
+          "body": "While the mimic remains motionless, it is indistinguishable from an ordinary object.",
+          "title": "False Appearance  (Object Form Only)"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Monstrosity",
+  "typeTags": [
+    "Shapechanger"
+  ]
+}

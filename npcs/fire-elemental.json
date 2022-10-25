@@ -1,0 +1,305 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 10
+    },
+    {
+      "name": "dex",
+      "value": 17
+    },
+    {
+      "name": "con",
+      "value": 16
+    },
+    {
+      "name": "int",
+      "value": 6
+    },
+    {
+      "name": "wis",
+      "value": 10
+    },
+    {
+      "name": "cha",
+      "value": 7
+    }
+  ],
+  "actions": [
+    {
+      "name": "Touch",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "2d6",
+                "type": "Fire"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Touch",
+            "rollsAttack": true
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Neutral",
+  "armorClass": 13,
+  "challengeRating": "5",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "conditionImmunities": [
+    "Exhaustion",
+    "Grappled",
+    "Paralyzed",
+    "Petrified",
+    "Poisoned",
+    "Prone",
+    "Restrained",
+    "Unconscious"
+  ],
+  "currentHp": 102,
+  "damageImmunities": [
+    {
+      "damageType": "Fire"
+    },
+    {
+      "damageType": "Poison"
+    }
+  ],
+  "damageResistances": [
+    {
+      "condition": "Nonmagical",
+      "damageType": "Bludgeoning"
+    },
+    {
+      "condition": "Nonmagical",
+      "damageType": "Piercing"
+    },
+    {
+      "condition": "Nonmagical",
+      "damageType": "Slashing"
+    }
+  ],
+  "exp": 1800,
+  "hitDice": "12d10+36",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/elemental-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "maxHp": 102,
+  "movementModes": [
+    {
+      "distance": 50,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Fire Elemental",
+  "proficiencies": [
+    {
+      "name": "Ignan",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 3,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Large",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage. In addition, the elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 (1d10) fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns.",
+          "title": "Fire Form"
+        },
+        {
+          "body": "The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 feet.",
+          "title": "Illumination"
+        },
+        {
+          "body": "For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage.",
+          "title": "Water Susceptibility"
+        },
+        {
+          "body": "The elemental makes two touch attacks.",
+          "title": "Multiattack"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Elemental"
+}

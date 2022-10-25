@@ -1,0 +1,343 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 25
+    },
+    {
+      "name": "dex",
+      "value": 9
+    },
+    {
+      "name": "con",
+      "value": 23
+    },
+    {
+      "name": "int",
+      "value": 10
+    },
+    {
+      "name": "wis",
+      "value": 14
+    },
+    {
+      "name": "cha",
+      "value": 13
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 28 (6d6 + 7) slashing damage.",
+      "name": "Greatsword",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "6d6",
+                "type": "Slashing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Greatsword",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Ranged Weapon Attack: +11 to hit, range 60/240 ft., one target. Hit: 29 (4d10 + 7) bludgeoning damage.",
+      "name": "Rock",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "4d10",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": true,
+            "longRange": 240,
+            "name": "Rock",
+            "range": 60,
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "When the giant enters any enemy's space for the first time on a turn, the enemy must succeed on a DC 19 Strength saving throw or be knocked prone.",
+      "name": "Tackle",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Tackle",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "str",
+              "difficultyClass": 19
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Lawful Evil",
+  "armorClass": 18,
+  "armorType": "Plate",
+  "challengeRating": "9",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 162,
+  "damageImmunities": [
+    {
+      "damageType": "Fire"
+    }
+  ],
+  "exp": 5000,
+  "hitDice": "13d12+78",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/giant-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "maxHp": 162,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Fire Giant",
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "type": "save"
+    },
+    {
+      "name": "Constitution",
+      "type": "save"
+    },
+    {
+      "name": "Charisma",
+      "type": "save"
+    },
+    {
+      "name": "Giant",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 4,
+  "race": "NPC",
+  "size": "Huge",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The giant makes two greatsword attacks.",
+          "title": "Multiattack"
+        },
+        {
+          "body": "Some adult fire giants are trained to lay siege to strongholds and break through enemy lines. These abilities are represented by the following traits.\n\nSiege Monster. The giant deals double damage to objects and structures.\n\nTackle. When the giant enters any enemy's space for the first time on a turn, the enemy must succeed on a DC 19 Strength saving throw or be knocked prone.",
+          "title": "Variant: New Giant Options"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Giant"
+}

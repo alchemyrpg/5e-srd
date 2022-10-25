@@ -1,0 +1,542 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 19
+    },
+    {
+      "name": "dex",
+      "value": 11
+    },
+    {
+      "name": "con",
+      "value": 16
+    },
+    {
+      "name": "int",
+      "value": 14
+    },
+    {
+      "name": "wis",
+      "value": 12
+    },
+    {
+      "name": "cha",
+      "value": 15
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage.",
+      "name": "Claw (Oni Form Only)",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d8",
+                "type": "Slashing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Claw (Oni Form Only)",
+            "rollsAttack": true
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) slashing damage, or 9 (1d10 + 4) slashing damage in Small or Medium form.",
+      "name": "Glaive",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "2d10",
+                "type": "Slashing"
+              },
+              {
+                "abilityName": "str",
+                "dice": "1d10",
+                "type": "Slashing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Glaive",
+            "rollsAttack": true
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Lawful Evil",
+  "armorClass": 16,
+  "armorType": "Chain Mail",
+  "challengeRating": "7",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 110,
+  "exp": 2900,
+  "hitDice": "13d10+39",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/giant-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 110,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    },
+    {
+      "distance": 30,
+      "mode": "Fly"
+    }
+  ],
+  "name": "Oni",
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "type": "save"
+    },
+    {
+      "name": "Constitution",
+      "type": "save"
+    },
+    {
+      "name": "Wisdom",
+      "type": "save"
+    },
+    {
+      "name": "Charisma",
+      "type": "save"
+    },
+    {
+      "name": "Common",
+      "type": "language"
+    },
+    {
+      "name": "Giant",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 3,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Large",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": true
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "bonus": 3,
+      "name": "Deception",
+      "proficient": true
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "cha",
+  "spells": [
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "M"
+      ],
+      "description": "Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.\n\nIf the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.\n\nIf any of this spell's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.",
+      "duration": "Up to 10 minutes",
+      "level": 2,
+      "materials": "bat fur and a drop of pitch or piece of coal",
+      "name": "Darkness",
+      "range": "60 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Evocation",
+      "tags": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
+      "duration": "1 hour",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
+      "level": 1,
+      "name": "Charm Person",
+      "range": "30 ft.",
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Enchantment",
+      "tags": [
+        "Bard",
+        "Druid",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).\n\nStarting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected.\n\nUndead and creatures immune to being charmed aren't affected by this spell.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.",
+      "duration": "1 minute",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.",
+      "level": 1,
+      "materials": "a pinch of find sand, rose petals, or a cricket",
+      "name": "Sleep",
+      "range": "90 ft.",
+      "rollsAttack": false,
+      "savingThrow": {
+      },
+      "school": "Enchantment",
+      "tags": [
+        "Bard",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "damage": [
+        {
+          "dice": "8d8",
+          "type": "Cold"
+        }
+      ],
+      "description": "A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.\n\nA creature killed by this spell becomes a frozen statue until it thaws.\n\nAt Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            6
+          ],
+          "damage": {
+            "dice": "1d8",
+            "type": "Cold"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "level": 5,
+      "materials": "a small crystal or glass cone",
+      "name": "Cone of Cold",
+      "range": "Self (60-foot cone)",
+      "rollsAttack": false,
+      "savingThrow": {
+        "abilityName": "CON"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Damage",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.\n\nAt Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+      "duration": "Up to 1 hour",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+      "level": 2,
+      "materials": "an eyelash encased in gum arabic",
+      "name": "Invisibility",
+      "range": "Touch",
+      "requiresConcentration": true,
+      "school": "Illusion",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You transform a willing creature you touch, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isn't affected.\n\nWhile in this form, the target's only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when stunned or otherwise incapacitated.\n\nWhile in the form of a misty cloud, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. The target can't attack or cast spells.",
+      "duration": "Up to 1 hour",
+      "level": 3,
+      "materials": "a bit of gauze and a wisp of smoke",
+      "name": "Gaseous Form",
+      "range": "Touch",
+      "requiresConcentration": true,
+      "school": "Transmutation",
+      "tags": [
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The oni's innate spellcasting ability is Charisma (spell save DC 13). The oni can innately cast the following spells, requiring no material components:\n\nAt will: darkness, invisibility\n\n1/day each: charm person, cone of cold, gaseous form, sleep",
+          "title": "Innate Spellcasting"
+        },
+        {
+          "body": "The oni's weapon attacks are magical.",
+          "title": "Magic Weapons"
+        },
+        {
+          "body": "The oni regains 10 hit points at the start of its turn if it has at least 1 hit point.",
+          "title": "Regeneration"
+        },
+        {
+          "body": "The oni makes two attacks, either with its claws or its glaive.",
+          "title": "Multiattack"
+        },
+        {
+          "body": "The oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size.",
+          "title": "Change Shape"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Giant"
+}

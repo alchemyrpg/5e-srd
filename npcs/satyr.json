@@ -1,0 +1,366 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 12
+    },
+    {
+      "name": "dex",
+      "value": 16
+    },
+    {
+      "name": "con",
+      "value": 11
+    },
+    {
+      "name": "int",
+      "value": 12
+    },
+    {
+      "name": "wis",
+      "value": 10
+    },
+    {
+      "name": "cha",
+      "value": 14
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) bludgeoning damage.",
+      "name": "Ram",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "2d4",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Ram",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+      "name": "Shortsword",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "1d6",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Shortsword",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+      "name": "Shortbow",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "1d6",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": true,
+            "longRange": 320,
+            "name": "Shortbow",
+            "range": 80,
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "The satyr plays its pipes and chooses one of the following magical effects: a charming melody, a frightening strain, or a gentle lullaby. Any creature within 60 feet of the satyr that can hear the pipes must succeed on a DC 13 Wisdom saving throw or be affected as described below. Other satyrs and creature that can't be charmed are unaffected\n   An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to these panpipes for the next 24 hours.",
+      "name": "Panpipes",
+      "sortOrder": 3,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Panpipes",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "wis",
+              "difficultyClass": 13
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Chaotic Neutral",
+  "armorClass": 14,
+  "armorType": "Leather Armor",
+  "challengeRating": "1/2",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 31,
+  "exp": 100,
+  "hitDice": "7d8",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/fey-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "maxHp": 31,
+  "movementModes": [
+    {
+      "distance": 40,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Satyr",
+  "proficiencies": [
+    {
+      "name": "Common",
+      "type": "language"
+    },
+    {
+      "name": "Elvish",
+      "type": "language"
+    },
+    {
+      "name": "Sylvan",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "size": "Medium",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "bonus": 2,
+      "name": "Performance",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": true
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The satyr has advantage on saving throws against spells and other magical effects.",
+          "title": "Magic Resistance"
+        },
+        {
+          "body": "A satyr might carry panpipes that it can play to create magical effects. Usually, only one satyr in a group carries such pipes. If a satyr has pipes, it gains the following additional action option.\n\nPanpipes. The satyr plays its pipes and chooses one of the following magical effects: a charming melody, a frightening strain, or a gentle lullaby. Any creature within 60 feet of the satyr that can hear the pipes must succeed on a DC 13 Wisdom saving throw or be affected as described below. Other satyrs and creature that can't be charmed are unaffected\n   An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to these panpipes for the next 24 hours.\n\nCharming Melody. The creature is charmed by the satyr for 1 minute. If the satyr or any of its companions harms the creature, the effect on it ends immediately.\n\nFrightening Strain. The creature is frightened for 1 minute.\n\nGentle Lullaby. The creature falls asleep and is unconscious for 1 minute. The effect ends if the creature takes damage or if someone takes an action to shake the creature awake.",
+          "title": "Variant: Satyr Pipes"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Fey"
+}

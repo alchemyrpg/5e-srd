@@ -1,0 +1,494 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 10
+    },
+    {
+      "name": "dex",
+      "value": 12
+    },
+    {
+      "name": "con",
+      "value": 11
+    },
+    {
+      "name": "int",
+      "value": 14
+    },
+    {
+      "name": "wis",
+      "value": 15
+    },
+    {
+      "name": "cha",
+      "value": 18
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +2 to hit (+6 to hit with shillelagh), reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage with shillelagh.",
+      "name": "Club",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "1d4",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Club",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +2 to hit (+6 to hit with shillelagh), reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage with shillelagh.",
+      "name": "Club (with shillelagh)",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "cha",
+            "crit": 20,
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Club (with shillelagh)",
+            "rollsAttack": true
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can.\n   Each time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.\n   The dryad can have no more than one humanoid and up to three beasts charmed at a time.",
+      "name": "Fey Charm",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Fey Charm",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "wis",
+              "difficultyClass": 14
+            }
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Neutral",
+  "armorClass": 11,
+  "challengeRating": "1",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 22,
+  "exp": 200,
+  "hitDice": "5d8",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/fey-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 22,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Dryad",
+  "proficiencies": [
+    {
+      "name": "Elvish",
+      "type": "language"
+    },
+    {
+      "name": "Sylvan",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Medium",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "bonus": 2,
+      "name": "Stealth",
+      "proficient": true
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "cha",
+  "spells": [
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing.",
+      "duration": "Up to 1 hour",
+      "level": 2,
+      "materials": "a handful of oak bark",
+      "name": "Barkskin",
+      "range": "Touch",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "druid",
+        "ranger"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "Whispering to the spirits of nature, you create one of the following effects within range: \n\n* You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round. \n\n* You instantly make a flower blossom, a seed pod open, or a leaf bud bloom. \n\n* You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube. \n\n* You instantly light or snuff out a candle, a torch, or a small campfire.",
+      "duration": "Instantaneous",
+      "level": 0,
+      "name": "Druidcraft",
+      "range": "30 ft.",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Druid"
+      ]
+    },
+    {
+      "castingTime": "1 Bonus Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.",
+      "duration": "1 minute",
+      "level": 0,
+      "materials": "mistletoe, a shamrock leaf, and a club or quarterstaff",
+      "name": "Shillelagh",
+      "range": "Touch",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Druid"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.\n\nA creature in the area when you cast the spell must succeed on a Strength saving throw or be restrained by the entangling plants until the spell ends. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.\n\nWhen the spell ends, the conjured plants wilt away.",
+      "duration": "Up to 1 minute",
+      "level": 1,
+      "name": "Entangle",
+      "range": "90 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "str"
+      },
+      "school": "Conjuration",
+      "tags": [
+        "Druid"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day.\n\nThe berries lose their potency if they have not been consumed within 24 hours of the casting of this spell.",
+      "duration": "Instantaneous",
+      "level": 1,
+      "materials": "a sprig of mistletoe",
+      "name": "Goodberry ",
+      "range": "Touch",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Druid",
+        "Ranger"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.",
+      "duration": "Up to 1 hour",
+      "level": 2,
+      "materials": "ashes from a burned leaf of mistletoe and a sprig of spruce",
+      "name": "Pass without Trace",
+      "range": "Self",
+      "requiresConcentration": true,
+      "rollsAttack": false,
+      "savingThrow": {
+        "difficultyClass": 15
+      },
+      "school": "Abjuration",
+      "tags": [
+        "Druid",
+        "Ranger"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The dryad's innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components:\n\nAt will: druidcraft\n\n3/day each: entangle, goodberry\n\n1/day each: barkskin, pass without trace, shillelagh",
+          "title": "Innate Spellcasting"
+        },
+        {
+          "body": "The dryad has advantage on saving throws against spells and other magical effects.",
+          "title": "Magic Resistance"
+        },
+        {
+          "body": "The dryad can communicate with beasts and plants as if they shared a language.",
+          "title": "Speak with Beasts and Plants"
+        },
+        {
+          "body": "Once on her turn, the dryad can use 10 feet of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger.",
+          "title": "Tree Stride"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Fey"
+}

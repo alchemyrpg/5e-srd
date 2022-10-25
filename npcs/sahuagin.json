@@ -1,0 +1,390 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 13
+    },
+    {
+      "name": "dex",
+      "value": 11
+    },
+    {
+      "name": "con",
+      "value": 12
+    },
+    {
+      "name": "int",
+      "value": 12
+    },
+    {
+      "name": "wis",
+      "value": 13
+    },
+    {
+      "name": "cha",
+      "value": 9
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d4",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Bite",
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "name": "Claws",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d4",
+                "type": "Slashing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Claws",
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "name": "Spear",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d6",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Spear"
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "name": "Spear (Thrown)",
+      "sortOrder": 3,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d6",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": true,
+            "longRange": 60,
+            "name": "Spear (Thrown)",
+            "range": 20
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "name": "Spear (Two Handed)",
+      "sortOrder": 4,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d8",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Spear (Two Handed)"
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Lawful Evil",
+  "armorClass": 12,
+  "armorType": "Natural Armor",
+  "challengeRating": "1/2",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 22,
+  "exp": 100,
+  "hideFromLibrary": true,
+  "hitDice": "4d8+4",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/humanoid-token.svg",
+  "initiativeBonus": 0,
+  "isHidden": true,
+  "isNPC": true,
+  "maxHp": 22,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    },
+    {
+      "distance": 40,
+      "mode": "Swim"
+    }
+  ],
+  "name": "Sahuagin",
+  "proficiencies": [
+    {
+      "name": "Sahuagin",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 120,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Medium",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "doubleProficiency": true,
+      "name": "Perception",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+          "title": "Blood Frenzy"
+        },
+        {
+          "body": "The sahuagin can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating.",
+          "title": "Limited Amphibiousness"
+        },
+        {
+          "body": "The sahuagin can magically command any shark within 120 feet of it, using a limited telepathy.",
+          "title": "Shark Telepathy"
+        },
+        {
+          "body": "The sahuagin makes two melee attacks: one with its bite and one with its claws or spear.",
+          "title": "Multiattack"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Humanoid",
+  "typeTags": [
+    "Sahuagin"
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 14
+    },
+    {
+      "name": "dex",
+      "value": 14
+    },
+    {
+      "name": "con",
+      "value": 11
+    },
+    {
+      "name": "int",
+      "value": 3
+    },
+    {
+      "name": "wis",
+      "value": 14
+    },
+    {
+      "name": "cha",
+      "value": 5
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage.",
+      "name": "Tentacles",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "2d6",
+                "type": "Slashing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Tentacles",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+      "name": "Beak",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "1d6",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Beak",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Neutral",
+  "armorClass": 14,
+  "armorType": "Natural Armor",
+  "challengeRating": "2",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 27,
+  "damageResistances": [
+    {
+      "condition": "Nonmagical",
+      "damageType": "Bludgeoning"
+    },
+    {
+      "condition": "Nonmagical",
+      "damageType": "Piercing"
+    },
+    {
+      "condition": "Nonmagical ",
+      "damageType": "Slashing"
+    }
+  ],
+  "exp": 450,
+  "hitDice": "6d8",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/monstrosity-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "maxHp": 27,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    },
+    {
+      "distance": 30,
+      "mode": "Climb"
+    }
+  ],
+  "name": "Grick",
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Medium",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The grick has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.",
+          "title": "Stone Camouflage"
+        },
+        {
+          "body": "The grick makes one attack with its tentacles. If that attack hits, the grick can make one beak attack against the same target.",
+          "title": "Multiattack"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Monstrosity"
+}

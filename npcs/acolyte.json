@@ -1,0 +1,649 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 10
+    },
+    {
+      "name": "dex",
+      "value": 10
+    },
+    {
+      "name": "con",
+      "value": 10
+    },
+    {
+      "name": "int",
+      "value": 10
+    },
+    {
+      "name": "wis",
+      "value": 14
+    },
+    {
+      "name": "cha",
+      "value": 11
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
+      "name": "Club",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d4",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Club"
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Any Alignment",
+  "armorClass": 10,
+  "challengeRating": "1/4",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 9,
+  "exp": 50,
+  "hitDice": "2d8",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/humanoid-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 9,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Acolyte",
+  "proficiencies": [
+    {
+      "name": "Common",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "size": "Medium",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": true
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": true
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 3,
+      "remaining": 3
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "wis",
+  "spells": [
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "Radiant"
+        }
+      ],
+      "description": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.\n\nThe spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            5,
+            11,
+            17
+          ],
+          "damage": {
+            "dice": "1d8",
+            "type": "Radiant"
+          },
+          "type": "at-character-level"
+        }
+      ],
+      "level": 0,
+      "name": "Sacred Flame",
+      "range": "60 ft.",
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Cleric"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V"
+      ],
+      "description": "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:\n\n*Your voice booms up to three times as loud as normal for 1 minute.\n\n*You cause flames to flicker, brighten, dim, or change color for 1 minute.\n\n*You cause harmless tremors in the ground for 1 minute.\n\n*You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.\n\n*You instantaneously cause an unlocked door or window to fly open or slam shut.\n\n*You alter the appearance of your eyes for 1 minute.\n\nIf you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.",
+      "duration": "Up to 1 minute",
+      "level": 0,
+      "name": "Thaumaturgy",
+      "range": "30 ft.",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Cleric"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "abilityName": "spl",
+          "dice": "1d8",
+          "type": "Healing"
+        }
+      ],
+      "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            2
+          ],
+          "damage": {
+            "abilityName": "spl",
+            "dice": "1d8",
+            "type": "Healing"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "level": 1,
+      "name": "Cure Wounds",
+      "range": "Touch",
+      "savingThrow": {
+      },
+      "school": "Evocation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+      "duration": "Up to 1 minute",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+      "level": 1,
+      "materials": "a sprinkling of holy water",
+      "name": "Bless",
+      "range": "30 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Enchantment",
+      "tags": [
+        "Cleric",
+        "Paladin"
+      ]
+    },
+    {
+      "castingTime": "1 Bonus Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a fireball.\n\nIf the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends.",
+      "duration": "1 minute",
+      "level": 1,
+      "materials": "a small silver mirror",
+      "name": "Sanctuary",
+      "range": "30 ft.",
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Abjuration",
+      "tags": [
+        "Artificer",
+        "Cleric"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "M"
+      ],
+      "description": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.\n\nIf you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.",
+      "duration": "1 hour",
+      "level": 0,
+      "materials": "a firefly or phosphorescent moss",
+      "name": "Light",
+      "range": "Touch",
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V"
+      ],
+      "description": "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:\n\n*Your voice booms up to three times as loud as normal for 1 minute.\n*You cause flames to flicker, brighten, dim, or change color for 1 minute.\n*You cause harmless tremors in the ground for 1 minute.\n*You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.\n*You instantaneously cause an unlocked door or window to fly open or slam shut.\n*You alter the appearance of your eyes for 1 minute.\n\nIf you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.",
+      "duration": "Up to 1 minute",
+      "isDeleted": true,
+      "level": 0,
+      "name": "Thaumaturgy",
+      "range": "30 ft.",
+      "school": "Transmutation",
+      "tags": [
+        "Cleric"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "Radiant"
+        }
+      ],
+      "description": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.\n\nThe spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            5,
+            11,
+            17
+          ],
+          "damage": {
+            "dice": "1d8",
+            "type": "Radiant"
+          },
+          "type": "at-character-level"
+        }
+      ],
+      "isDeleted": true,
+      "level": 0,
+      "name": "Sacred Flame",
+      "range": "60 ft.",
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Cleric"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "M"
+      ],
+      "description": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.\n\nIf you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.",
+      "duration": "1 hour",
+      "isDeleted": true,
+      "level": 0,
+      "materials": "a firefly or phosphorescent moss",
+      "name": "Light",
+      "range": "Touch",
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "abilityName": "wis",
+          "dice": "1d8",
+          "type": "Healing"
+        }
+      ],
+      "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.\n\nWhen you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            2
+          ],
+          "damage": {
+            "abilityName": "wis",
+            "dice": "1d8",
+            "type": "Healing"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "isDeleted": true,
+      "level": 1,
+      "name": "Cure Wounds",
+      "range": "Touch",
+      "savingThrow": {
+      },
+      "school": "Evocation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.\n\nWhen you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+      "duration": "Up to 1 minute",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+      "isDeleted": true,
+      "level": 1,
+      "materials": "a sprinkling of holy water",
+      "name": "Bless",
+      "range": "30 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Enchantment",
+      "tags": [
+        "Cleric",
+        "Paladin"
+      ]
+    },
+    {
+      "castingTime": "1 Bonus Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a fireball.\n\nIf the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends.",
+      "duration": "1 minute",
+      "isDeleted": true,
+      "level": 1,
+      "materials": "a small silver mirror",
+      "name": "Sanctuary",
+      "range": "30 ft.",
+      "savingThrow": {
+      },
+      "school": "Abjuration",
+      "tags": [
+        "Artificer",
+        "Cleric"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:\nCantrips (at will): light, sacred flame, thaumaturgy\n1st level (3 slots): bless, cure wounds, sanctuary",
+          "title": "Spellcasting"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Humanoid",
+  "typeTags": [
+    "Any Race"
+  ]
+}

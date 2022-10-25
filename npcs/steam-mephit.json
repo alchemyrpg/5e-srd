@@ -1,0 +1,420 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 5
+    },
+    {
+      "name": "dex",
+      "value": 11
+    },
+    {
+      "name": "con",
+      "value": 10
+    },
+    {
+      "name": "int",
+      "value": 11
+    },
+    {
+      "name": "wis",
+      "value": 10
+    },
+    {
+      "name": "cha",
+      "value": 12
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 2 (1d4) slashing damage plus 2 (1d4) fire damage.",
+      "name": "Claws",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "1d4",
+                "type": "Slashing"
+              },
+              {
+                "dice": "1d4",
+                "type": "Fire"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Claws",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "When the mephit dies, it explodes in a cloud of steam. Each creature within 5 feet of the mephit must succeed on a DC 10 Dexterity saving throw or take 4 (1d8) fire damage.",
+      "name": "Death Burst",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "1d8",
+                "type": "Fire"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Death Burst",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "dex",
+              "difficultyClass": 10
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "The mephit exhales a 15-foot cone of scalding steam. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 4 (1d8) fire damage on a failed save, or half as much damage on a successful one.",
+      "name": "Steam Breath (Recharge 6)",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "1d8",
+                "type": "Fire"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Steam Breath (Recharge 6)",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "dex",
+              "difficultyClass": 10
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Neutral Evil",
+  "armorClass": 10,
+  "challengeRating": "1/4",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "conditionImmunities": [
+    "Poisoned"
+  ],
+  "currentHp": 21,
+  "damageImmunities": [
+    {
+      "damageType": "Fire"
+    },
+    {
+      "damageType": "Poison"
+    }
+  ],
+  "exp": 50,
+  "hitDice": "6d6",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/elemental-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 21,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    },
+    {
+      "distance": 30,
+      "mode": "Fly"
+    }
+  ],
+  "name": "Steam Mephit",
+  "proficiencies": [
+    {
+      "name": "Aquan",
+      "type": "language"
+    },
+    {
+      "name": "Ignan",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Small",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "cha",
+  "spells": [
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V"
+      ],
+      "description": "Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with truesight.",
+      "duration": "1 minute",
+      "level": 2,
+      "name": "Blur",
+      "range": "Self",
+      "requiresConcentration": true,
+      "school": "Illusion",
+      "tags": [
+        "artificer",
+        "sorcerer",
+        "wizard"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The mephit can innately cast blur, requiring no material components. Its innate spellcasting ability is Charisma.",
+          "title": "Innate Spellcasting (1/Day)"
+        },
+        {
+          "body": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+          "title": "Variant: Summon Mephits (1/Day)"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Elemental"
+}

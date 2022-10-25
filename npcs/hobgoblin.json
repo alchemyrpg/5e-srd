@@ -1,0 +1,335 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 13
+    },
+    {
+      "name": "dex",
+      "value": 12
+    },
+    {
+      "name": "con",
+      "value": 12
+    },
+    {
+      "name": "int",
+      "value": 10
+    },
+    {
+      "name": "wis",
+      "value": 10
+    },
+    {
+      "name": "cha",
+      "value": 9
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage, or 6 (1d10 + 1) slashing damage if used with two hands.",
+      "name": "Longsword (1H)",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d8",
+                "type": "Slashing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Longsword (1H)",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage, or 6 (1d10 + 1) slashing damage if used with two hands.",
+      "name": "Longsword (2H)",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d10",
+                "type": "Slashing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Longsword (2H)",
+            "rollsAttack": true
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
+      "name": "Longbow",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "1d8",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": true,
+            "longRange": 600,
+            "name": "Longbow",
+            "range": 150,
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Lawful Evil",
+  "armorClass": 18,
+  "armorType": "Chain Mail",
+  "challengeRating": "1/2",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 11,
+  "exp": 100,
+  "hitDice": "2d8+2",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/humanoid-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "maxHp": 11,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Hobgoblin",
+  "proficiencies": [
+    {
+      "name": "Common",
+      "type": "language"
+    },
+    {
+      "name": "Goblin",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Medium",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "Once per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated.",
+          "title": "Martial Advantage"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Humanoid",
+  "typeTags": [
+    "Goblinoid"
+  ]
+}

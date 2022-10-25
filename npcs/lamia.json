@@ -1,0 +1,547 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 16
+    },
+    {
+      "name": "dex",
+      "value": 13
+    },
+    {
+      "name": "con",
+      "value": 15
+    },
+    {
+      "name": "int",
+      "value": 14
+    },
+    {
+      "name": "wis",
+      "value": 15
+    },
+    {
+      "name": "cha",
+      "value": 16
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) slashing damage.",
+      "name": "Claws",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "2d10",
+                "type": "Slashing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Claws",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+      "name": "Dagger",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d4",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Dagger",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Spell Attack: +5 to hit, reach 5 ft., one creature. Hit: The target is magically cursed for 1 hour. Until the curse ends, the target has disadvantage on Wisdom saving throws and all ability checks.",
+      "name": "Intoxicating Touch",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Intoxicating Touch",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Chaotic Evil",
+  "armorClass": 13,
+  "armorType": "Natural Armor",
+  "challengeRating": "4",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 97,
+  "exp": 1100,
+  "hitDice": "13d10+26",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/monstrosity-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 97,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Lamia",
+  "proficiencies": [
+    {
+      "name": "Abyssal",
+      "type": "language"
+    },
+    {
+      "name": "Common",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Large",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "bonus": 2,
+      "name": "Deception",
+      "proficient": true
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": true
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "cha",
+  "spells": [
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
+      "duration": "1 hour",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
+      "level": 1,
+      "name": "Charm Person",
+      "range": "30 ft.",
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Enchantment",
+      "tags": [
+        "Bard",
+        "Druid",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You make yourself—including your clothing, armor, weapons, and other belongings on your person—look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.\n\nThe changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.\n\nTo discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC.",
+      "duration": "1 hour",
+      "level": 1,
+      "name": "Disguise Self",
+      "range": "Self",
+      "savingThrow": {
+      },
+      "school": "Illusion",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "M"
+      ],
+      "description": "You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.\n\nThe target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.\n\nYou can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn't met before the spell expires, the activity isn't performed.\n\nIf you or any of your companions damage the target, the spell ends.",
+      "duration": "Up to 8 hours",
+      "level": 2,
+      "materials": "a snake's tongue and either a bit of honeycomb or a drop of sweet oil",
+      "name": "Suggestion",
+      "range": "30 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Enchantment",
+      "tags": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. You can use your action to dismiss the illusory duplicates.\n\nEach time a creature targets you with an attack during the spell's duration, roll a d20 to determine whether the attack instead targets one of your duplicates.\n\nIf you have three duplicates, you must roll a 6 or higher to change the attack's target to a duplicate. With two duplicates, you must roll an 8 or higher. With one duplicate, you must roll an 11 or higher.\nA duplicate's AC equals 10 + your Dexterity modifier. If an attack hits a duplicate, the duplicate is destroyed. A duplicate can be destroyed only by an attack that hits it. It ignores all other damage and effects. The spell ends when all three duplicates are destroyed.\n\nA creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight.",
+      "duration": "1 minute",
+      "level": 2,
+      "name": "Mirror Image",
+      "range": "Self",
+      "school": "Illusion",
+      "tags": [
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 minute",
+      "components": [
+        "V"
+      ],
+      "damage": [
+        {
+          "dice": "5d10",
+          "type": "Psychic"
+        }
+      ],
+      "description": "You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell.\n\nYou can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.\n\nYou can end the spell early by using an action to dismiss it. A remove curse, greater restoration, or wish spell also ends it.\n\nAt Higher Levels. When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above.",
+      "duration": "30 days",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above.",
+      "level": 5,
+      "name": "Geas",
+      "range": "60 ft.",
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Enchantment",
+      "tags": [
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot cube. The image appears at a spot that you can see within range and lasts for the duration. It seems completely real, including sounds, smells, and temperature appropriate to the thing depicted. You can't create sufficient heat or cold to cause damage, a sound loud enough to deal thunder damage or deafen a creature, or a smell that might sicken a creature (like a troglodyte's stench).\n\nAs long as you are within range of the illusion, you can use your action to cause the image to move to any other spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. Similarly, you can cause the illusion to make different sounds at different times, even making it carry on a conversation, for example.\n\nPhysical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature.\n\nAt Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration.",
+      "duration": "Up to 10 minutes",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration.",
+      "level": 3,
+      "materials": "a bit of fleece",
+      "name": "Major Image",
+      "range": "120 ft.",
+      "requiresConcentration": true,
+      "school": "Illusion",
+      "tags": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "10 minutes",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this spell, it can fail the saving throw voluntarily if it wants to be observed.\n\nKnowledge of Target\n\nKnowledge\t                                                                                           Save Modifier\n\nSecondhand (you have heard of the target)\t                                           +5\nFirsthand (you have met the target)\t                                                   +0\nFamiliar (you know the target well)\t                                                    -5\n\nConnection to Target\n\nConnection\t                                                                                            Save Modifier\n\nLikeness or picture\t                                                                                    -2\nPossession or garment                                       \t                                    -4\nBody part, lock of hair, bit of nail, or the like\t                                    -10\n\nOn a successful save, the target isn't affected, and you can't use this spell against it again for 24 hours.\n\nOn a failed save, the spell creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist.\n\nInstead of targeting a creature, you can choose a location you have seen before as the target of this spell. When you do, the sensor appears at that location and doesn't move.",
+      "duration": "Up to 10 minutes",
+      "level": 5,
+      "materials": "a focus worth at least 1,000 gp, such as a crystal ball, a silver mirror, or a font filled with holy water",
+      "name": "Scrying",
+      "range": "Self",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Divination",
+      "tags": [
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Warlock",
+        "Wizard"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The lamia's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components.\n\nAt will: disguise self (any humanoid form), major image\n\n3/day each: charm person, mirror image, scrying, suggestion\n\n1/day: geas",
+          "title": "Innate Spellcasting"
+        },
+        {
+          "body": "The lamia makes two attacks: one with its claws and one with its dagger or Intoxicating Touch.",
+          "title": "Mutliattack"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Monstrosity"
+}

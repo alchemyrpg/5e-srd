@@ -1,0 +1,380 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 23
+    },
+    {
+      "name": "dex",
+      "value": 14
+    },
+    {
+      "name": "con",
+      "value": 21
+    },
+    {
+      "name": "int",
+      "value": 16
+    },
+    {
+      "name": "wis",
+      "value": 13
+    },
+    {
+      "name": "cha",
+      "value": 20
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage.",
+      "name": "Bite",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "2d10",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Bite",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
+      "name": "Claw",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "2d6",
+                "type": "Slashing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Claw",
+            "rollsAttack": true
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 55 (10d10) fire damage on a failed save, or half as much damage on a successful one.",
+      "name": "Fire Breath",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "10d10"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Fire Breath",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "dex",
+              "difficultyClass": 17
+            }
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+      "name": "Weakening Breath",
+      "sortOrder": 3,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Weakening Breath",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "str",
+              "difficultyClass": 17
+            }
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Lawful Good",
+  "armorClass": 10,
+  "armorType": "Natural Armor",
+  "challengeRating": "10",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 178,
+  "damageImmunities": [
+    {
+      "damageType": "Fire"
+    }
+  ],
+  "exp": 5900,
+  "hitDice": "17d10+85",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/dragon-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "maxHp": 178,
+  "movementModes": [
+    {
+      "distance": 40,
+      "mode": "Walking"
+    },
+    {
+      "distance": 80,
+      "mode": "Fly"
+    },
+    {
+      "distance": 40,
+      "mode": "Swim"
+    }
+  ],
+  "name": "Young Gold Dragon",
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "type": "save"
+    },
+    {
+      "name": "Constitution",
+      "type": "save"
+    },
+    {
+      "name": "Wisdom",
+      "type": "save"
+    },
+    {
+      "name": "Charisma",
+      "type": "save"
+    },
+    {
+      "name": "Common",
+      "type": "language"
+    },
+    {
+      "name": "Draconic",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 4,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 30,
+      "name": "Blindsight"
+    },
+    {
+      "distance": 120,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Large",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "doubleProficiency": true,
+      "name": "Perception",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": true
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": true
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The dragon makes three attacks: one with its bite and two with its claws.",
+          "title": "Multiattack"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Dragon"
+}

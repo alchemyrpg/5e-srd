@@ -1,0 +1,449 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 8
+    },
+    {
+      "name": "dex",
+      "value": 12
+    },
+    {
+      "name": "con",
+      "value": 12
+    },
+    {
+      "name": "int",
+      "value": 7
+    },
+    {
+      "name": "wis",
+      "value": 10
+    },
+    {
+      "name": "cha",
+      "value": 10
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) slashing damage plus 2 (1d4) fire damage.",
+      "name": "Claws",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "1d4",
+                "type": "Slashing"
+              },
+              {
+                "dice": "1d4",
+                "type": "Fire"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Claws",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "When the mephit dies, it explodes in a burst of lava. Each creature within 5 feet of it must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one.",
+      "name": "Death Burst",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "2d6",
+                "type": "Fire"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Death Burst",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "dex",
+              "difficultyClass": 11
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "The mephit exhales a 15-foot cone of fire. Each creature in that area must make a DC 11 Dexterity saving throw, taking 7 (2d6) fire damage on a failed save, or half as much damage on a successful one.",
+      "name": "Fire Breath (Recharge 6)",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "2d6",
+                "type": "Fire"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Fire Breath (Recharge 6)",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "dex",
+              "difficultyClass": 11
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Neutral Evil",
+  "armorClass": 11,
+  "challengeRating": "1/2",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "conditionImmunities": [
+    "Poisoned"
+  ],
+  "currentHp": 22,
+  "damageImmunities": [
+    {
+      "damageType": "Fire"
+    },
+    {
+      "damageType": "Poison"
+    }
+  ],
+  "damageVulnerabilities": [
+    {
+      "damageType": "Cold"
+    }
+  ],
+  "exp": 100,
+  "hitDice": "5d6+5",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/elemental-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 22,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    },
+    {
+      "distance": 30,
+      "mode": "Fly"
+    }
+  ],
+  "name": "Magma Mephit",
+  "proficiencies": [
+    {
+      "name": "Ignan",
+      "type": "language"
+    },
+    {
+      "name": "Terran",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Small",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": true
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "cha",
+  "spells": [
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "Fire"
+        }
+      ],
+      "description": "Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again.\n\nIf a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn't drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn.\n\nAt Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
+      "duration": "Up to 1 minute",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            2
+          ],
+          "damage": {
+            "dice": "1d8",
+            "type": "Fire"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "level": 2,
+      "materials": "a piece of iron and a flame",
+      "name": "Heat Metal",
+      "range": "60 ft.",
+      "requiresConcentration": true,
+      "rollsAttack": false,
+      "savingThrow": {
+        "abilityName": "CON"
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Druid"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "While the mephit remains motionless, it is indistinguishable from an ordinary mound of magma.",
+          "title": "False Appearance"
+        },
+        {
+          "body": "The mephit can innately cast heat metal (spell save DC 10), requiring no material components. Its innate spellcasting ability is Charisma.",
+          "title": "Innate Spellcasting (1/Day)"
+        },
+        {
+          "body": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+          "title": "Variant: Summon Mephits (1/Day)"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Elemental"
+}

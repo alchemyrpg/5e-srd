@@ -1,0 +1,320 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 6
+    },
+    {
+      "name": "dex",
+      "value": 14
+    },
+    {
+      "name": "con",
+      "value": 13
+    },
+    {
+      "name": "int",
+      "value": 6
+    },
+    {
+      "name": "wis",
+      "value": 10
+    },
+    {
+      "name": "cha",
+      "value": 8
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) necrotic damage, and the target's Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.\n   If a non-evil humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later.",
+      "name": "Strength Drain",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "2d6",
+                "type": "Necrotic"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Strength Drain",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Chaotic Evil",
+  "armorClass": 12,
+  "challengeRating": "1/2",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "conditionImmunities": [
+    "Exhaustion",
+    "Frightened",
+    "Grappled",
+    "Paralyzed",
+    "Petrified",
+    "Poisoned",
+    "Prone",
+    "Restrained"
+  ],
+  "currentHp": 16,
+  "damageImmunities": [
+    {
+      "damageType": "Necrotic"
+    },
+    {
+      "damageType": "Poison"
+    }
+  ],
+  "damageResistances": [
+    {
+      "damageType": "Cold"
+    },
+    {
+      "damageType": "Fire"
+    },
+    {
+      "damageType": "Lightning"
+    },
+    {
+      "damageType": "Thunder"
+    },
+    {
+      "condition": "Nonmagical",
+      "damageType": "Bludgeoning"
+    },
+    {
+      "condition": "Nonmagical",
+      "damageType": "Piercing"
+    },
+    {
+      "condition": "Nonmagical",
+      "damageType": "Slashing"
+    }
+  ],
+  "damageVulnerabilities": [
+    {
+      "damageType": "Radiant"
+    }
+  ],
+  "exp": 100,
+  "hitDice": "3d8+3",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/undead-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "maxHp": 16,
+  "movementModes": [
+    {
+      "distance": 40,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Shadow",
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Medium",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": true
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The shadow can move through a space as narrow as 1 inch wide without squeezing.",
+          "title": "Amorphous"
+        },
+        {
+          "body": "While in dim light or darkness, the shadow can take the Hide action as a bonus action. Its stealth bonus is also improved to +6.",
+          "title": "Shadow Stealth"
+        },
+        {
+          "body": "While in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws.",
+          "title": "Sunlight Weakness"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Undead"
+}

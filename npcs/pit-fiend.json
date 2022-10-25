@@ -1,0 +1,635 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 26
+    },
+    {
+      "name": "dex",
+      "value": 14
+    },
+    {
+      "name": "con",
+      "value": 24
+    },
+    {
+      "name": "int",
+      "value": 22
+    },
+    {
+      "name": "wis",
+      "value": 18
+    },
+    {
+      "name": "cha",
+      "value": 24
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 22 (4d6 + 8) piercing damage. The target must succeed on a DC 21 Constitution saving throw or become poisoned. While poisoned in this way, the target can't regain hit points, and it takes 21 (6d6) poison damage at the start of each of its turns. The poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+      "name": "Bite",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "4d6",
+                "type": "Piercing"
+              },
+              {
+                "dice": "6d6",
+                "type": "Poison"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Bite",
+            "rollsAttack": true,
+            "savingThrow": {
+              "abilityName": "CON",
+              "difficultyClass": 21
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 17 (2d8 + 8) slashing damage.",
+      "name": "Claw",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "2d8",
+                "type": "Slashing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Claw",
+            "rollsAttack": true
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 15 (2d6 + 8) bludgeoning damage plus 21 (6d6) fire damage.\n",
+      "name": "Mace",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "2d6",
+                "type": "Bludgeoning"
+              },
+              {
+                "dice": "6d6",
+                "type": "Fire"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Mace",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 24 (3d10 + 8) bludgeoning damage.",
+      "name": "Tail",
+      "sortOrder": 3,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "3d10",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Tail",
+            "rollsAttack": true
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Any creature hostile to the pit fiend that starts its turn within 20 feet of the pit fiend must make a DC 21 Wisdom saving throw, unless the pit fiend is incapacitated. On a failed save, the creature is frightened until the start of its next turn. If a creature's saving throw is successful, the creature is immune to the pit fiend's Fear Aura for the next 24 hours.",
+      "name": "Fear Aura",
+      "sortOrder": 4,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Fear Aura",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "wis",
+              "difficultyClass": 21
+            }
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Lawful Evil",
+  "armorClass": 19,
+  "armorType": "Natural Armor",
+  "challengeRating": "20",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "conditionImmunities": [
+    "Poisoned"
+  ],
+  "currentHp": 300,
+  "damageImmunities": [
+    {
+      "damageType": "Fire"
+    },
+    {
+      "damageType": "Poison"
+    }
+  ],
+  "damageResistances": [
+    {
+      "damageType": "Cold"
+    },
+    {
+      "condition": "Nonmagical (excludes Silvered)",
+      "damageType": "Bludgeoning"
+    },
+    {
+      "condition": "Nonmagical (excludes Silvered)",
+      "damageType": "Piercing"
+    },
+    {
+      "condition": "Nonmagical (excludes Silvered)",
+      "damageType": "Slashing"
+    }
+  ],
+  "exp": 25000,
+  "hitDice": "24d10+168",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/fiend-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 300,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    },
+    {
+      "distance": 60,
+      "mode": "Fly"
+    }
+  ],
+  "name": "Pit Fiend",
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "type": "save"
+    },
+    {
+      "name": "Constitution",
+      "type": "save"
+    },
+    {
+      "name": "Wisdom",
+      "type": "save"
+    },
+    {
+      "name": "Infernal",
+      "type": "language"
+    },
+    {
+      "name": "telepathy 120 ft.",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 6,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 120,
+      "name": "Truesight"
+    }
+  ],
+  "size": "Large",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "cha",
+  "spells": [
+    {
+      "canBeCastAsRitual": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+      "duration": "Up to 10 minutes ",
+      "level": 1,
+      "name": "Detect Magic",
+      "range": "Self",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Divination",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "damage": [
+        {
+          "dice": "5d8",
+          "type": "Fire"
+        }
+      ],
+      "description": "You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.\n\nWhen the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 fire damage, or half as much damage on a successful save.\n\nOne side of the wall, selected by you when you cast this spell, deals 5d8 fire damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage.\n\nAt Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
+      "duration": "Up to 1 minute",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            5
+          ],
+          "damage": {
+            "dice": "1d8",
+            "type": "Fire"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "level": 4,
+      "materials": "a small piece of phosphorus",
+      "name": "Wall of Fire",
+      "range": "120 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Druid",
+        "Sorcerer",
+        "Wizard",
+        "Combat",
+        "Control",
+        "Creation"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "damage": [
+        {
+          "dice": "8d6",
+          "type": "Fire"
+        }
+      ],
+      "description": "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.\n\nAt Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            4
+          ],
+          "damage": {
+            "dice": "1d6",
+            "type": "Fire"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "level": 3,
+      "materials": "a tiny ball of bat guano and sulfur",
+      "name": "Fireball",
+      "range": "150 ft. / 20 ft. sphere",
+      "rollsAttack": false,
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "\nChoose a creature that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. This spell has no effect on undead. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.\n\nAt Higher Levels. When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them.",
+      "duration": "Up to 1 minute",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them.",
+      "level": 5,
+      "materials": "a small, straight piece of iron",
+      "name": "Hold Monster",
+      "range": "90 ft.",
+      "requiresConcentration": true,
+      "rollsAttack": false,
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Enchantment",
+      "tags": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The pit fiend's spellcasting ability is Charisma (spell save DC 21). The pit fiend can innately cast the following spells, requiring no material components:\n\nAt will: detect magic, fireball\n\n3/day each: hold monster, wall of fire",
+          "title": "Innate Spellcasting"
+        },
+        {
+          "body": "The pit fiend has advantage on saving throws against spells and other magical effects.\n",
+          "title": "Magic Resistance"
+        },
+        {
+          "body": "The pit fiend's weapon attacks are magical.",
+          "title": "Magic Weapons"
+        },
+        {
+          "body": "The pit fiend makes four attacks: one with its bite, one with its claw, one with its mace, and one with its tail.\n",
+          "title": "Multiattack"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Fiend",
+  "typeTags": [
+    "Devil"
+  ]
+}

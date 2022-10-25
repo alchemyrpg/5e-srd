@@ -1,0 +1,423 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 7
+    },
+    {
+      "name": "dex",
+      "value": 13
+    },
+    {
+      "name": "con",
+      "value": 10
+    },
+    {
+      "name": "int",
+      "value": 9
+    },
+    {
+      "name": "wis",
+      "value": 11
+    },
+    {
+      "name": "cha",
+      "value": 12
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) slashing damage plus 2 (1d4) cold damage.\n",
+      "name": "Claws",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "1d4",
+                "type": "Slashing"
+              },
+              {
+                "dice": "1d4",
+                "type": "Cold"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Claws",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "The mephit exhales a 15-foot cone of cold air. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 5 (2d4) cold damage on a failed save, or half as much damage on a successful one.",
+      "name": "Frost Breath (Recharge 6)",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "2d4",
+                "type": "Cold"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Frost Breath (Recharge 6)",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "dex",
+              "difficultyClass": 10
+            }
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "When the mephit dies, it explodes in a burst of jagged ice. Each creature within 5 feet of it must make a DC 10 Dexterity saving throw, taking 4 (1d8) slashing damage on a failed save, or half as much damage on a successful one.",
+      "name": "Death Burst",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "1d8",
+                "type": "Slashing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Death Burst",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "dex",
+              "difficultyClass": 10
+            }
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Neutral Evil",
+  "armorClass": 11,
+  "challengeRating": "1/2",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "conditionImmunities": [
+    "Poisoned"
+  ],
+  "currentHp": 21,
+  "damageImmunities": [
+    {
+      "damageType": "Cold"
+    },
+    {
+      "damageType": "Poison"
+    }
+  ],
+  "damageVulnerabilities": [
+    {
+      "damageType": "Bludgeoning"
+    },
+    {
+      "damageType": "Fire"
+    }
+  ],
+  "exp": 100,
+  "hitDice": "6d6",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/elemental-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 21,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    },
+    {
+      "distance": 30,
+      "mode": "Fly"
+    }
+  ],
+  "name": "Ice Mephit",
+  "proficiencies": [
+    {
+      "name": "Aquan",
+      "type": "language"
+    },
+    {
+      "name": "Auran",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Small",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": true
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "cha",
+  "spells": [
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st.",
+      "duration": "Up to 1 hour",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st.",
+      "level": 1,
+      "name": "Fog Cloud",
+      "range": "120 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Conjuration",
+      "tags": [
+        "Druid",
+        "Ranger",
+        "Sorcerer",
+        "Wizard"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "While the mephit remains motionless, it is indistinguishable from an ordinary shard of ice.",
+          "title": "False Appearance"
+        },
+        {
+          "body": "The mephit can innately cast fog cloud, requiring no material components. Its innate spellcasting ability is Charisma.",
+          "title": "Innate Spellcasting (1/Day)"
+        },
+        {
+          "body": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+          "title": "Variant: Summon Mephits (1/Day)"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Elemental"
+}

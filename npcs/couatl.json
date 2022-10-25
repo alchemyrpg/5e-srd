@@ -1,0 +1,706 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 16
+    },
+    {
+      "name": "dex",
+      "value": 20
+    },
+    {
+      "name": "con",
+      "value": 17
+    },
+    {
+      "name": "int",
+      "value": 18
+    },
+    {
+      "name": "wis",
+      "value": 20
+    },
+    {
+      "name": "cha",
+      "value": 18
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 8 (1d6 + 5) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 24 hours. Until this poison ends, the target is unconscious. Another creature can use an action to shake the target awake.",
+      "name": "Bite",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "1d6",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Bite",
+            "rollsAttack": true,
+            "savingThrow": {
+              "abilityName": "CON",
+              "difficultyClass": 13
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +6 to hit, reach 10 ft., one Medium or smaller creature. Hit: 10 (2d6 + 3) bludgeoning damage, and the target is grappled (escape DC 15). Until this grapple ends, the target is restrained, and the couatl can't constrict another target.",
+      "name": "Constrict",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "2d6",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Constrict",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Lawful Good",
+  "armorClass": 19,
+  "armorType": "Natural Armor",
+  "challengeRating": "4",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 97,
+  "damageImmunities": [
+    {
+      "damageType": "Psychic"
+    },
+    {
+      "condition": "Nonmagical",
+      "damageType": "Bludgeoning"
+    },
+    {
+      "condition": "Nonmagical",
+      "damageType": "Piercing"
+    },
+    {
+      "condition": "Nonmagical",
+      "damageType": "Slashing"
+    }
+  ],
+  "damageResistances": [
+    {
+      "damageType": "Radiant"
+    }
+  ],
+  "exp": 1100,
+  "hitDice": "13d8+39",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/celestial-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 97,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    },
+    {
+      "distance": 90,
+      "mode": "Fly"
+    }
+  ],
+  "name": "Couatl",
+  "proficiencies": [
+    {
+      "name": "Constitution",
+      "type": "save"
+    },
+    {
+      "name": "Wisdom",
+      "type": "save"
+    },
+    {
+      "name": "Charisma",
+      "type": "save"
+    },
+    {
+      "name": "All",
+      "type": "language"
+    },
+    {
+      "name": "telepathy 120 ft. ",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 120,
+      "name": "Truesight"
+    }
+  ],
+  "size": "Medium",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 1,
+      "remaining": 1
+    },
+    {
+      "max": 1,
+      "remaining": 1
+    },
+    {
+      "max": 1,
+      "remaining": 1
+    },
+    {
+      "max": 1,
+      "remaining": 1
+    },
+    {
+      "max": 1,
+      "remaining": 1
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "cha",
+  "spells": [
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesn't speak any language, the creature is unaffected.\n\nYou initially learn the surface thoughts of the creature—what is most on its mind in that moment. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends.\n\nQuestions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation.\n\nYou can also use this spell to detect the presence of thinking creatures you can't see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can't detect a creature with an Intelligence of 3 or lower or one that doesn't speak any language.\n\nOnce you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range.",
+      "duration": "Up to 1 minute",
+      "level": 2,
+      "materials": "a copper piece",
+      "name": "Detect Thoughts",
+      "range": "Self",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Divination",
+      "tags": [
+        "bard",
+        "sorcerer",
+        "wizard"
+      ]
+    },
+    {
+      "canBeCastAsRitual": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+      "duration": "Up to 10 minutes ",
+      "level": 1,
+      "name": "Detect Magic",
+      "range": "Self",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Divination",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "abilityName": "spl",
+          "dice": "1d8",
+          "type": "Healing"
+        }
+      ],
+      "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            2
+          ],
+          "damage": {
+            "abilityName": "spl",
+            "dice": "1d8",
+            "type": "Healing"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "level": 1,
+      "name": "Cure Wounds",
+      "range": "Touch",
+      "savingThrow": {
+      },
+      "school": "Evocation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+      "duration": "Up to 1 minute",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+      "level": 1,
+      "materials": "a sprinkling of holy water",
+      "name": "Bless",
+      "range": "30 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Enchantment",
+      "tags": [
+        "Cleric",
+        "Paladin"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+      "duration": "Up to 10 minutes",
+      "level": 1,
+      "name": "Detect Evil and Good",
+      "range": "Self",
+      "requiresConcentration": true,
+      "school": "Divination",
+      "tags": [
+        "Cleric",
+        "Paladin"
+      ]
+    },
+    {
+      "castingTime": "1 Reaction",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.",
+      "duration": "1 round",
+      "level": 1,
+      "name": "Shield",
+      "range": "Self",
+      "school": "Abjuration",
+      "tags": [
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Bonus Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a fireball.\n\nIf the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends.",
+      "duration": "1 minute",
+      "level": 1,
+      "materials": "a small silver mirror",
+      "name": "Sanctuary",
+      "range": "30 ft.",
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Abjuration",
+      "tags": [
+        "Artificer",
+        "Cleric"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.",
+      "duration": "Instantaneous",
+      "level": 2,
+      "name": "Lesser Restoration",
+      "range": "Touch",
+      "school": "Abjuration",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad.",
+      "duration": "Instantaneous",
+      "level": 3,
+      "name": "Create Food and Water",
+      "range": "30 ft.",
+      "school": "Conjuration",
+      "tags": [
+        "Artificer",
+        "Cleric",
+        "Paladin"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random.\n\nFor the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.",
+      "duration": "1 hour",
+      "level": 2,
+      "name": "Protection from Poison",
+      "range": "Touch",
+      "school": "Abjuration",
+      "tags": [
+        "Artificer",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's exhaustion level by one, or end one of the following effects on the target:\n\n* One effect that charmed or petrified the target\n* One curse, including the target's attunement to a cursed magic item\n* Any reduction to one of the target's ability scores\n* One effect reducing the target's hit point maximum",
+      "duration": "Instantaneous",
+      "level": 5,
+      "materials": "diamond dust worth at least 100 gp, which the spell consumes",
+      "name": "Greater Restoration",
+      "range": "Touch",
+      "school": "Abjuration",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid"
+      ]
+    },
+    {
+      "castingTime": "1 minute",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "This spell shapes a creature's dreams. Choose a creature known to you as the target of this spell. The target must be on the same plane of existence as you. Creatures that don't sleep, such as elves, can't be contacted by this spell. You, or a willing creature you touch, enters a trance state, acting as a messenger. While in the trance, the messenger is aware of his or her surroundings, but can't take actions or move.\n\nIf the target is asleep, the messenger appears in the target's dreams and can converse with the target as long as it remains asleep, through the duration of the spell. The messenger can also shape the environment of the dream, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the effect of the spell early. The target recalls the dream perfectly upon waking. If the target is awake when you cast the spell, the messenger knows it, and can either end the trance (and the spell) or wait for the target to fall asleep, at which point the messenger appears in the target's dreams.\n\nYou can make the messenger appear monstrous and terrifying to the target. If you do, the messenger can deliver a message of no more than ten words and then the target must make a Wisdom saving throw. On a failed save, echoes of the phantasmal monstrosity spawn a nightmare that lasts the duration of the target's sleep and prevents the target from gaining any benefit from that rest. In addition, when the target wakes up, it takes 3d6 psychic damage.\n\nIf you have a body part, lock of hair, clipping from a nail, or similar portion of the target's body, the target makes its saving throw with disadvantage.",
+      "duration": "8 hours",
+      "level": 5,
+      "materials": "a handful of sand, a dab of ink, and a writing quill plucked from a sleeping bird",
+      "name": "Dream",
+      "range": "Special",
+      "savingThrow": {
+        "difficultyClass": 15
+      },
+      "school": "Illusion",
+      "tags": [
+        "Bard",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "10 minutes",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this spell, it can fail the saving throw voluntarily if it wants to be observed.\n\nKnowledge of Target\n\nKnowledge\t                                                                                           Save Modifier\n\nSecondhand (you have heard of the target)\t                                           +5\nFirsthand (you have met the target)\t                                                   +0\nFamiliar (you know the target well)\t                                                    -5\n\nConnection to Target\n\nConnection\t                                                                                            Save Modifier\n\nLikeness or picture\t                                                                                    -2\nPossession or garment                                       \t                                    -4\nBody part, lock of hair, bit of nail, or the like\t                                    -10\n\nOn a successful save, the target isn't affected, and you can't use this spell against it again for 24 hours.\n\nOn a failed save, the spell creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist.\n\nInstead of targeting a creature, you can choose a location you have seen before as the target of this spell. When you do, the sensor appears at that location and doesn't move.",
+      "duration": "Up to 10 minutes",
+      "level": 5,
+      "materials": "a focus worth at least 1,000 gp, such as a crystal ball, a silver mirror, or a font filled with holy water",
+      "name": "Scrying",
+      "range": "Self",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Divination",
+      "tags": [
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Warlock",
+        "Wizard"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": " The couatl's spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring only verbal components:\n\nAt will: detect evil and good, detect magic, detect thoughts\n\n3/day each: bless, create food and water, cure wounds, lesser restoration, protection from poison, sanctuary, shield\n\n1/day each: dream, greater restoration, scrying",
+          "title": "Innate Spellcasting"
+        },
+        {
+          "body": "The couatl's weapon attacks are magical.\n",
+          "title": "Magic Weapons"
+        },
+        {
+          "body": "The couatl is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location.",
+          "title": "Shielded Mind"
+        },
+        {
+          "body": "The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).\n   In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form.",
+          "title": "Change Shape"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Celestial"
+}

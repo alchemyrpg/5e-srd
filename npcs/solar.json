@@ -1,0 +1,642 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 26
+    },
+    {
+      "name": "dex",
+      "value": 22
+    },
+    {
+      "name": "con",
+      "value": 26
+    },
+    {
+      "name": "int",
+      "value": 25
+    },
+    {
+      "name": "wis",
+      "value": 25
+    },
+    {
+      "name": "cha",
+      "value": 30
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 22 (4d6 + 8) slashing damage plus 27 (6d8) radiant damage.",
+      "name": "Greatsword",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "4d6",
+                "type": "Slashing"
+              },
+              {
+                "abilityName": "str",
+                "dice": "6d8",
+                "type": "Radiant"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Greatsword",
+            "rollsAttack": true
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Ranged Weapon Attack: +13 to hit, range 150/600 ft., one target. Hit: 15 (2d8 + 6) piercing damage plus 27 (6d8) radiant damage. If the target is a creature that has 100 hit points or fewer, it must succeed on a DC 15 Constitution saving throw or die.",
+      "name": "Slaying Longbow",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "2d8",
+                "type": "Piercing"
+              },
+              {
+                "dice": "6d8",
+                "type": "Radiant"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": true,
+            "longRange": 600,
+            "name": "Slaying Longbow",
+            "range": 150,
+            "rollsAttack": true,
+            "savingThrow": {
+              "abilityName": "CON",
+              "difficultyClass": 15
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "The solar emits magical, divine energy. Each creature of its choice in a 10-foot radius must make a DC 23 Dexterity saving throw, taking 14 (4d6) fire damage plus 14 (4d6) radiant damage on a failed save, or half as much damage on a successful one.",
+      "name": "Searing Burst (Costs 2 Actions)",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "4d6",
+                "type": "Fire"
+              },
+              {
+                "dice": "4d6",
+                "type": "Radiant"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Searing Burst (Costs 2 Actions)",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "dex",
+              "difficultyClass": 23
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "The solar targets one creature it can see within 30 feet of it. If the target can see it, the target must succeed on a DC 15 Constitution saving throw or be blinded until magic such as the lesser restoration spell removes the blindness.",
+      "name": "Blinding Gaze (Costs 3 Actions)",
+      "sortOrder": 3,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Blinding Gaze (Costs 3 Actions)",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "CON",
+              "difficultyClass": 15
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Lawful Good",
+  "armorClass": 21,
+  "armorType": "Natural Armor",
+  "challengeRating": "21",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "conditionImmunities": [
+    "Charmed",
+    "Exhaustion",
+    "Frightened",
+    "Poisoned",
+    "Prone"
+  ],
+  "currentHp": 243,
+  "damageImmunities": [
+    {
+      "damageType": "Necrotic"
+    },
+    {
+      "damageType": "Poison"
+    }
+  ],
+  "damageResistances": [
+    {
+      "damageType": "Radiant"
+    },
+    {
+      "condition": "Nonmagical",
+      "damageType": "Bludgeoning"
+    },
+    {
+      "condition": "Nonmagical",
+      "damageType": "Piercing"
+    },
+    {
+      "condition": "Nonmagical",
+      "damageType": "Slashing"
+    }
+  ],
+  "exp": 33000,
+  "hitDice": "18d10+144",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/celestial-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 243,
+  "movementModes": [
+    {
+      "distance": 50,
+      "mode": "Walking"
+    },
+    {
+      "distance": 150,
+      "mode": "Fly"
+    }
+  ],
+  "name": "Solar",
+  "proficiencies": [
+    {
+      "name": "Intelligence",
+      "type": "save"
+    },
+    {
+      "name": "Wisdom",
+      "type": "save"
+    },
+    {
+      "name": "Charisma",
+      "type": "save"
+    },
+    {
+      "name": "All",
+      "type": "language"
+    },
+    {
+      "name": "telepathy 120 ft.",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 7,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 120,
+      "name": "Truesight"
+    }
+  ],
+  "size": "Large",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "cha",
+  "spells": [
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+      "duration": "Up to 10 minutes",
+      "level": 1,
+      "name": "Detect Evil and Good",
+      "range": "Self",
+      "requiresConcentration": true,
+      "school": "Divination",
+      "tags": [
+        "Cleric",
+        "Paladin"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.\n\nAt Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+      "duration": "Up to 1 hour",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+      "level": 2,
+      "materials": "an eyelash encased in gum arabic",
+      "name": "Invisibility",
+      "range": "Touch",
+      "requiresConcentration": true,
+      "school": "Illusion",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "canBeCastAsRitual": true,
+      "castingTime": "1 minute",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question.\n\nDivine beings aren't necessarily omniscient, so you might receive \"unclear\" as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the DM might offer a short phrase as an answer instead.\n\nIf you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer. The DM makes this roll in secret.",
+      "duration": "1 minute",
+      "level": 5,
+      "materials": "incense and a vial of holy or unholy water",
+      "name": "Commune",
+      "range": "Self",
+      "school": "Divination",
+      "tags": [
+        "Cleric"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "dice": "6d10",
+          "type": "Slashing"
+        }
+      ],
+      "description": "You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.\n\nWhen a creature enters the wall's area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage.",
+      "duration": "Up to 10 minutes",
+      "level": 6,
+      "name": "Blade Barrier",
+      "range": "90 ft.",
+      "requiresConcentration": true,
+      "rollsAttack": false,
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Cleric"
+      ]
+    },
+    {
+      "castingTime": "10 minutes",
+      "components": [
+        "V",
+        "M",
+        "S"
+      ],
+      "description": "You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell early.\n\nWhen you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 × 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.\n\nWhen you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction.\n\nPrecipitation\nStage\tCondition\n1\t        Clear\n2\t        Light clouds\n3\t       Overcast or ground fog\n4\t        Rain, hail, or snow\n5\t        Torrential rain, driving hail, or blizzard\n\nTemperature\nStage\tCondition\n1\t        Unbearable heat\n2\t        Hot\n3\t        Warm\n4\t        Cool\n5\t        Cold\n6\t        Arctic cold\n\nWind\nStage\tCondition\n1\t        Calm\n2\t        Moderate wind\n3\t        Strong wind\n4\t        Gale\n5\t        Storm",
+      "duration": "Up to 8 hours",
+      "level": 8,
+      "materials": "burning incense and bits of earth and wood mixed in water",
+      "name": "Control Weather",
+      "range": "Self (5-mile radius)",
+      "requiresConcentration": true,
+      "school": "Transmutation",
+      "tags": [
+        "Cleric",
+        "Druid",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you.\n\nYou can end the spell early by using either of the following special functions.\n\nBreak Enchantment. As your action, you touch a creature you can reach that is charmed, frightened, or possessed by a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures.\n\nDismissal. As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.",
+      "duration": "Up to 1 minute",
+      "level": 5,
+      "materials": "holy water or powdered silver and iron",
+      "name": "Dispel Evil and Good",
+      "range": "Self",
+      "requiresConcentration": true,
+      "school": "Abjuration",
+      "tags": [
+        "Cleric",
+        "Paladin"
+      ]
+    },
+    {
+      "castingTime": "1 hour",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You touch a dead creature that has been dead for no more than a century, that didn't die of old age, and that isn't undead. If its soul is free and willing, the target returns to life with all its hit points.\n\nThis spell neutralizes any poisons and cures normal diseases afflicting the creature when it died. It doesn't, however, remove magical diseases, curses, and the like; if such effects aren't removed prior to casting the spell, they afflict the target on its return to life.\n\nThis spell closes all mortal wounds and restores any missing body parts.\n\nComing back from the dead is an ordeal. The target takes a −4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears.\n\nCasting this spell to restore life to a creature that has been dead for one year or longer taxes you greatly. Until you finish a long rest, you can't cast spells again, and you have disadvantage on all attack rolls, ability checks, and saving throws.",
+      "duration": "Instantaneous",
+      "level": 7,
+      "materials": "a diamond worth at least 1,000 gp, which the spell consumes",
+      "name": "Resurrection",
+      "range": "Touch",
+      "school": "Necromancy",
+      "tags": [
+        "Bard",
+        "Cleric"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The solar's weapon attacks are magical. When the solar hits with any weapon, the weapon deals an extra 6d8 radiant damage (included in the attack).",
+          "title": "Angelic Weapons"
+        },
+        {
+          "body": "The solar knows if it hears a lie.\n",
+          "title": "Divine Awareness"
+        },
+        {
+          "body": "The solar's spellcasting ability is Charisma (spell save DC 25). It can innately cast the following spells, requiring no material components:\n\nAt will: detect evil and good, invisibility (self only)\n\n3/day each: blade barrier, dispel evil and good, resurrection\n\n1/day each: commune, control weather",
+          "title": "Innate Spellcasting"
+        },
+        {
+          "body": "The solar has advantage on saving throws against spells and other magical effects.",
+          "title": "Magic Resistance"
+        },
+        {
+          "body": "The solar makes two greatsword attacks.",
+          "title": "Multiattack"
+        },
+        {
+          "body": "The solar releases its greatsword to hover magically in an unoccupied space within 5 feet of it. If the solar can see the sword, the solar can mentally command it as a bonus action to fly up to 50 feet and either make one attack against a target or return to the solar's hands. If the hovering sword is targeted by any effect, the solar is considered to be holding it. The hovering sword falls if the solar dies.\n",
+          "title": "Flying Sword"
+        },
+        {
+          "body": "The solar touches another creature. The target magically regains 40 (8d8 + 4) hit points and is freed from any curse, disease, poison, blindness, or deafness.",
+          "title": "Healing Touch (4/Day)"
+        },
+        {
+          "body": "The solar can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The solar regains spent legendary actions at the start of its turn.\n\nTeleport. The solar magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.\n\nSearing Burst (Costs 2 Actions). The solar emits magical, divine energy. Each creature of its choice in a 10-foot radius must make a DC 23 Dexterity saving throw, taking 14 (4d6) fire damage plus 14 (4d6) radiant damage on a failed save, or half as much damage on a successful one.\n\nBlinding Gaze (Costs 3 Actions). The solar targets one creature it can see within 30 feet of it. If the target can see it, the target must succeed on a DC 15 Constitution saving throw or be blinded until magic such as the lesser restoration spell removes the blindness.",
+          "title": "Legendary Actions"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Celestial"
+}

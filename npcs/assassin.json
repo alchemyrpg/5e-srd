@@ -1,0 +1,332 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 11
+    },
+    {
+      "name": "dex",
+      "value": 16
+    },
+    {
+      "name": "con",
+      "value": 14
+    },
+    {
+      "name": "int",
+      "value": 13
+    },
+    {
+      "name": "wis",
+      "value": 11
+    },
+    {
+      "name": "cha",
+      "value": 10
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.",
+      "name": "Shortsword",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "1d6",
+                "type": "Piercing"
+              },
+              {
+                "dice": "7d6",
+                "type": "Poison"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Shortsword",
+            "savingThrow": {
+              "abilityName": "CON",
+              "difficultyClass": 15
+            }
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.",
+      "name": "Light Crossbow",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "1d8",
+                "type": "Piercing"
+              },
+              {
+                "dice": "7d6",
+                "type": "Poison"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": true,
+            "longRange": 320,
+            "name": "Light Crossbow",
+            "range": 80,
+            "savingThrow": {
+              "abilityName": "CON",
+              "difficultyClass": 15
+            }
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Any Non-Good Alignment",
+  "armorClass": 15,
+  "armorType": "Studded Leather",
+  "challengeRating": "8",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 78,
+  "damageResistances": [
+    {
+      "damageType": "Poison"
+    }
+  ],
+  "exp": 3900,
+  "hitDice": "12d8+24",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/humanoid-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "maxHp": 78,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Assassin",
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "type": "save"
+    },
+    {
+      "name": "Intelligence",
+      "type": "save"
+    },
+    {
+      "name": "Thieves' Cant",
+      "type": "language"
+    },
+    {
+      "name": "Pick Any Two",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 3,
+  "race": "NPC",
+  "size": "Medium",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": true
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": true
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "doubleProficiency": true,
+      "name": "Stealth",
+      "proficient": true
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit.",
+          "title": "Assassinate"
+        },
+        {
+          "body": "If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.",
+          "title": "Evasion"
+        },
+        {
+          "body": "The assassin deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the attack roll.",
+          "title": "Sneak Attack (1/Turn)"
+        },
+        {
+          "body": "The assassin makes two shortsword attacks.",
+          "title": "Multiattack"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Humanoid",
+  "typeTags": [
+    "Any Race"
+  ]
+}

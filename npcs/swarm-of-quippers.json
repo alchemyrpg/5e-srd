@@ -1,0 +1,302 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 13
+    },
+    {
+      "name": "dex",
+      "value": 16
+    },
+    {
+      "name": "con",
+      "value": 9
+    },
+    {
+      "name": "int",
+      "value": 1
+    },
+    {
+      "name": "wis",
+      "value": 7
+    },
+    {
+      "name": "cha",
+      "value": 2
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +5 to hit, reach 0 ft., one creature in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer.",
+      "name": "Bites",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "4d6",
+                "type": "Piercing"
+              },
+              {
+                "dice": "2d6",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Bites",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Unaligned",
+  "armorClass": 13,
+  "challengeRating": "1",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "conditionImmunities": [
+    "Charmed",
+    "Frightened",
+    "Grappled",
+    "Paralyzed",
+    "Petrified",
+    "Prone",
+    "Restrained",
+    "Stunned"
+  ],
+  "currentHp": 28,
+  "damageResistances": [
+    {
+      "damageType": "Bludgeoning"
+    },
+    {
+      "damageType": "Piercing"
+    },
+    {
+      "damageType": "Slashing"
+    }
+  ],
+  "exp": 200,
+  "hitDice": "8d8+-8",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/beast-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "maxHp": 28,
+  "movementModes": [
+    {
+      "distance": 0,
+      "mode": "Walking"
+    },
+    {
+      "distance": 40,
+      "mode": "Swim"
+    }
+  ],
+  "name": "Swarm of Quippers",
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Medium",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The swarm has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+          "title": "Blood Frenzy"
+        },
+        {
+          "body": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny quipper. The swarm can't regain hit points or gain temporary hit points.",
+          "title": "Swarm"
+        },
+        {
+          "body": "The swarm can breathe only underwater.",
+          "title": "Water Breathing"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Beast",
+  "typeTags": [
+    "Swarm of tiny beasts"
+  ]
+}

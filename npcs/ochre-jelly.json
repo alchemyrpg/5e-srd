@@ -1,0 +1,300 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 15
+    },
+    {
+      "name": "dex",
+      "value": 6
+    },
+    {
+      "name": "con",
+      "value": 14
+    },
+    {
+      "name": "int",
+      "value": 2
+    },
+    {
+      "name": "wis",
+      "value": 6
+    },
+    {
+      "name": "cha",
+      "value": 1
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage plus 3 (1d6) acid damage.",
+      "name": "Pseudopod",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "2d6",
+                "type": "Bludgeoning"
+              },
+              {
+                "dice": "1d6",
+                "type": "Acid"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Pseudopod",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Unaligned",
+  "armorClass": 8,
+  "challengeRating": "2",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "conditionImmunities": [
+    "Blinded",
+    "Charmed",
+    "Deafened",
+    "Exhaustion",
+    "Frightened",
+    "Prone"
+  ],
+  "currentHp": 45,
+  "damageImmunities": [
+    {
+      "damageType": "Lightning"
+    },
+    {
+      "damageType": "Slashing"
+    }
+  ],
+  "damageResistances": [
+    {
+      "damageType": "Acid"
+    }
+  ],
+  "exp": 450,
+  "hitDice": "6d10+12",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/ooze-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "maxHp": 45,
+  "movementModes": [
+    {
+      "distance": 10,
+      "mode": "Walking"
+    },
+    {
+      "distance": 10,
+      "mode": "Climb"
+    }
+  ],
+  "name": "Ochre Jelly",
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Blindsight"
+    }
+  ],
+  "size": "Large",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The jelly can move through a space as narrow as 1 inch wide without squeezing.",
+          "title": "Amorphous"
+        },
+        {
+          "body": "The jelly can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+          "title": "Spider Climb"
+        },
+        {
+          "body": "Split. When a jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points. Each new jelly has hit points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly.",
+          "title": "Reactions"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Ooze"
+}

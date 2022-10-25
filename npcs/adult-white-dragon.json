@@ -1,0 +1,515 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 22
+    },
+    {
+      "name": "dex",
+      "value": 10
+    },
+    {
+      "name": "con",
+      "value": 22
+    },
+    {
+      "name": "int",
+      "value": 8
+    },
+    {
+      "name": "wis",
+      "value": 12
+    },
+    {
+      "name": "cha",
+      "value": 12
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 4 (1d8) cold damage.",
+      "name": "Bite",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "2d10",
+                "type": "Piercing"
+              },
+              {
+                "dice": "1d8",
+                "type": "Cold"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Bite",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
+      "name": "Claw",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "2d6",
+                "type": "Slashing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Claw",
+            "rollsAttack": true
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.",
+      "name": "Tail",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "2d8",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Tail",
+            "rollsAttack": true
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 14 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
+      "name": "Frightful Presence",
+      "sortOrder": 3,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Frightful Presence",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "wis",
+              "difficultyClass": 14
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 19 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one.",
+      "name": "Cold Breath (Recharge 5-6)",
+      "sortOrder": 4,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "12d8",
+                "type": "Cold"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Cold Breath (Recharge 5-6)",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "CON",
+              "difficultyClass": 19
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+      "name": "Wing Attack (Costs 2 Actions)",
+      "sortOrder": 5,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "2d6",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Wing Attack (Costs 2 Actions)",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "dex",
+              "difficultyClass": 19
+            }
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Driving sleet falls in a 40-foot-high, 20-foot-radius cylinder centered on a point the dragon can see within 120 feet of it. Each creature in that area must succeed on a DC 15 Constitution saving throw or be blinded until initiative count 20 on the next round.",
+      "name": "Blinding Sleet",
+      "sortOrder": 6,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Blinding Sleet",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "CON",
+              "difficultyClass": 15
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Chaotic Evil",
+  "armorClass": 18,
+  "armorType": "Natural Armor",
+  "challengeRating": "13",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 200,
+  "damageImmunities": [
+    {
+      "damageType": "Cold"
+    }
+  ],
+  "exp": 10000,
+  "hitDice": "16d12+96",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/dragon-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "maxHp": 200,
+  "movementModes": [
+    {
+      "distance": 40,
+      "mode": "Walking"
+    },
+    {
+      "distance": 30,
+      "mode": "Burrow"
+    },
+    {
+      "distance": 80,
+      "mode": "Fly"
+    },
+    {
+      "distance": 40,
+      "mode": "Swim"
+    }
+  ],
+  "name": "Adult White Dragon",
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "type": "save"
+    },
+    {
+      "name": "Constitution",
+      "type": "save"
+    },
+    {
+      "name": "Wisdom",
+      "type": "save"
+    },
+    {
+      "name": "Charisma",
+      "type": "save"
+    },
+    {
+      "name": "Common",
+      "type": "language"
+    },
+    {
+      "name": "Draconic",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 5,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Blindsight"
+    },
+    {
+      "distance": 120,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Huge",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "bonus": 5,
+      "name": "Perception",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": true
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement.",
+          "title": "Ice Walk"
+        },
+        {
+          "body": "If the dragon fails a saving throw, it can choose to succeed instead. If the dragon fails a saving throw, it can choose to succeed instead.",
+          "title": "Legendary Resistance (3/Day)"
+        },
+        {
+          "body": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+          "title": "Multiattack"
+        },
+        {
+          "body": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.\n\nDetect. The dragon makes a Wisdom (Perception) check.\n\nTail Attack. The dragon makes a tail attack.\n\nWing Attack (Costs 2 Actions). The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+          "title": "Legendary Actions"
+        },
+        {
+          "body": "On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:\n\n* Freezing fog fills a 20-foot-radius sphere centered on a point the dragon can see within 120 feet of it. The fog spreads around corners, and its area is heavily obscured. Each creature in the fog when it appears must make a DC 10 Constitution saving throw, taking 10 (3d6) cold damage on a failed save, or half as much damage on a successful one. A creature that ends its turn in the fog takes 10 (3d6) cold damage. A wind of at least 20 miles per hour disperses the fog. The fog otherwise lasts until the dragon uses this lair action again or until the dragon dies.\n\n* Jagged ice shards fall from the ceiling, striking up to three creatures underneath that the dragon can see within 120 feet of it. The dragon makes one ranged attack roll (+7 to hit) against each target. On a hit, the target takes 10 (3d6) piercing damage.\n\n* The dragon creates an opaque wall of ice on a solid surface it can see within 120 feet of it. The wall can be up to 30 feet long, 30 feet high, and 1 foot thick. When the wall appears, each creature within its area is pushed 5 feet out of the wall's space; appearing on whichever side of the wall it wants. Each 10-foot section of the wall has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. The wall disappears when the dragon uses this lair action again or when the dragon dies.",
+          "title": "Lair Actions"
+        },
+        {
+          "body": "At your discretion, a legendary (adult or ancient) white dragon can use one or both of the following additional lair actions while in its lair:\n\nBlinding Sleet. Driving sleet falls in a 40-foot-high, 20-foot-radius cylinder centered on a point the dragon can see within 120 feet of it. Each creature in that area must succeed on a DC 15 Constitution saving throw or be blinded until initiative count 20 on the next round.\n\nWhirling Wind. A strong wind blows in a 30-foot-radius sphere centered on the dragon (see the Dungeon Master's Guide for rules on strong wind). The dragon's flying is not affected by this wind, which lasts until the next time the dragon uses a lair action or until the dragon dies.",
+          "title": "Additional Lair Actions"
+        },
+        {
+          "body": "The region containing a legendary white dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:\n\n* Chilly fog lightly obscures the land within 6 miles of the dragon's lair.\n\n* Freezing precipitation falls within 6 miles of the dragon's lair, sometimes forming blizzard conditions when the dragon is at rest.\n\n* Icy walls block off areas in the dragon's lair. Each wall is 6 inches thick, and a 10-foot section has AC 5, 15 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage.\n\n* If the dragon wishes to move through a wall, it can do so without slowing down. The portion of the wall the dragon moves through is destroyed, however.\n\nIf the dragon dies, the fog and precipitation fade within 1 day. The ice walls melt over the course of 1d10 days.",
+          "title": "Regional Effects"
+        },
+        {
+          "body": "Any of these effects might appear in the area around a white dragon's lair, in addition to or instead of the effects described in the Monster Manual:\n\nBiting Chill. Extreme cold envelops the land within 6 miles of the dragon's lair (see the Dungeon Master's Guide for rules on extreme cold). If the climate in the area already features extreme cold, the cold is numbing, giving creatures in the area without immunity or resistance to cold damage disadvantage on Strength and Dexterity checks.\n\nMirror Ice. The icy surfaces in the dragon's lair reflect light like mirrors, giving creatures in the lair other than the dragon disadvantage on Dexterity (Stealth) checks made to hide. In addition, at each intersection or branching passage, any creature other than the dragon has a 50 percent chance of going in a different direction from the direction it intends.",
+          "title": "Additional Regional Effects"
+        },
+        {
+          "body": "You can customize any dragon's stat block to reflect the dragon's unique character. Minor changes such as those below are easy to make and have no impact on a dragon's challenge rating.\n\nLanguages. Most dragons prefer to speak Draconic but learn Common for dealing with allies and minions. But given their high Intelligence and long life span, dragons can easily learn additional languages. You can add languages to a dragon's stat block.\n\nSkills. Most dragons are proficient in the Perception and Stealth skills, and many dragons have additional skill proficiencies. As with languages, you can customize a dragon's skill list (even doubling their proficiency bonus with certain skills) to reflect particular interests and activities. You can also give a dragon tool proficiencies, particularly if the dragon spends time in Humanoid form.\n\nSpells. See the \"Variant: Dragons as Innate Spellcasters\" inset(s), below.\n\nOther Traits and Actions. You can borrow traits and actions from other monsters to add unique flavor to a dragon. Consider these examples:\n\nFlyby, The dragon is an agile flier, quick to fly out of enemies' reach.\nThe dragon doesn't provoke an opportunity attack when it flies out of an enemy's reach.\n\nMimicry. Impersonating characters or their allies could be a fun trick for a crafty dragon.\nThe dragon can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 9 Wisdom (Insight) check.\n\nRejuvenation. You might decide that dragons in your campaign, being an essential part of the Material Plane, are nearly impossible to destroy. A dragon's life essence might be preserved in the egg from which it first emerged, in its hoard, or in a cavernous hall at the center of the world, just as a lich's essence is hidden in a phylactery.\nIf it has an essence-preserving object, a destroyed dragon gains a new body in 1d10 days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the object.\n\nSpecial Senses. Most dragons have blindsight and darkvision. You might upgrade blindsight to truesight, or you could give a dragon with a burrowing speed tremorsense.\n\nTunneler. The dragon can burrow through solid rock at half its burrowing speed and leaves a tunnel in its wake.",
+          "title": "Customizing Dragons"
+        },
+        {
+          "body": "This dragon can innately cast one spell, once per day, requiring no material components. The spell's level can be no higher than 4th. The dragon's spell save DC is DC 14, and it has +6 to hit with spell attacks.\n   A suggested spell list is shown below, but you can also choose spells to reflect the dragon's character. A dragon who innately casts druid spells feels different from one who casts warlock spells. You can also give a dragon spells of a higher level than this rule allows, but such a tweak might increase the dragon's challenge rating—especially if those spells deal damage or impose conditions on targets.\n\n* gust of wind",
+          "title": "Variant: Dragons as Innate Spellcasters"
+        },
+        {
+          "body": "Dragons are innately magical creatures that can master a few spells as they age, using this variant.\n   A young or older dragon can innately cast a number of spells equal to its Charisma modifier. Each spell can be cast once per day, requiring no material components, and the spell's level can be no higher than one-third the dragon's challenge rating (rounded down). The dragon's bonus to hit with spell attacks is equal to its proficiency bonus + its Charisma bonus. The dragon's spell save DC equals 8 + its proficiency bonus + its Charisma modifier.\n   This dragon can innately cast one spell, once per day, requiring no material components. The spell's level can be no higher than 4th. The dragon's spell save DC is DC 14, and it has +6 to hit with spell attacks. See the spell page for a list of spells the dragon is capable of casting. A selection of examples are shown below:\n\n* fire shield\n\n* ice storm\n\n* sleet storm",
+          "title": "Variant: Dragons as Innate Spellcasters"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Dragon"
+}

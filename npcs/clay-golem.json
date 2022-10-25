@@ -1,0 +1,340 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 20
+    },
+    {
+      "name": "dex",
+      "value": 9
+    },
+    {
+      "name": "con",
+      "value": 18
+    },
+    {
+      "name": "int",
+      "value": 3
+    },
+    {
+      "name": "wis",
+      "value": 8
+    },
+    {
+      "name": "cha",
+      "value": 1
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the greater restoration spell or other magic.",
+      "name": "Slam",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "2d10",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Slam",
+            "rollsAttack": true,
+            "savingThrow": {
+              "abilityName": "CON",
+              "difficultyClass": 15
+            }
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action.",
+      "name": "Haste (Recharge 5-6)",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Haste (Recharge 5-6)",
+            "rollsAttack": false
+          },
+          "type": "custom-attack"
+        },
+        {
+          "attack": {
+          }
+        }
+      ]
+    }
+  ],
+  "alignment": "Unaligned",
+  "armorClass": 14,
+  "armorType": "Natural Armor",
+  "challengeRating": "9",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "conditionImmunities": [
+    "Charmed",
+    "Exhaustion",
+    "Frightened",
+    "Paralyzed",
+    "Petrified",
+    "Poisoned"
+  ],
+  "currentHp": 133,
+  "damageImmunities": [
+    {
+      "damageType": "Acid"
+    },
+    {
+      "damageType": "Poison"
+    },
+    {
+      "damageType": "Psychic"
+    },
+    {
+      "condition": "Nonmagical (excludes Adamantine)",
+      "damageType": "Bludgeoning"
+    },
+    {
+      "condition": "Nonmagical (excludes Adamantine)",
+      "damageType": "Piercing"
+    },
+    {
+      "condition": "Nonmagical (excludes Adamantine)",
+      "damageType": "Slashing"
+    }
+  ],
+  "exp": 5000,
+  "hitDice": "14d10+56",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/construct-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "maxHp": 133,
+  "movementModes": [
+    {
+      "distance": 20,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Clay Golem",
+  "proficiencies": [
+    {
+      "name": "understands the languages of its creator but can't speak",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 4,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Large",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "Whenever the golem is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt.",
+          "title": "Acid Absorption"
+        },
+        {
+          "body": "Whenever the golem starts its turn with 60 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.",
+          "title": "Berserk"
+        },
+        {
+          "body": "The golem is immune to any spell or effect that would alter its form.",
+          "title": "Immutable Form"
+        },
+        {
+          "body": "The golem has advantage on saving throws against spells and other magical effects.",
+          "title": "Magic Resistance"
+        },
+        {
+          "body": "The golem's weapon attacks are magical.",
+          "title": "Magic Weapons"
+        },
+        {
+          "body": "The golem makes two slam attacks.",
+          "title": "Multiattack"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Construct"
+}

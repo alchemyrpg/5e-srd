@@ -1,0 +1,817 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 19
+    },
+    {
+      "name": "dex",
+      "value": 18
+    },
+    {
+      "name": "con",
+      "value": 16
+    },
+    {
+      "name": "int",
+      "value": 16
+    },
+    {
+      "name": "wis",
+      "value": 19
+    },
+    {
+      "name": "cha",
+      "value": 18
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 8 (1d8 + 4) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.\n",
+      "name": "Bite",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d8",
+                "type": "Piercing"
+              },
+              {
+                "dice": "10d8",
+                "type": "Poison"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Bite",
+            "rollsAttack": true,
+            "savingThrow": {
+              "abilityName": "con",
+              "difficultyClass": 15
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Ranged Weapon Attack: +8 to hit, range 15/30 ft., one creature. Hit: The target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.",
+      "name": "Spit Poison",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "10d8",
+                "type": "Poison"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": true,
+            "longRange": 30,
+            "name": "Spit Poison",
+            "range": 15,
+            "rollsAttack": true,
+            "savingThrow": {
+              "abilityName": "CON",
+              "difficultyClass": 15
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Lawful Good",
+  "armorClass": 18,
+  "armorType": "Natural Armor",
+  "challengeRating": "10",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "conditionImmunities": [
+    "Charmed",
+    "Poisoned"
+  ],
+  "currentHp": 127,
+  "damageImmunities": [
+    {
+      "damageType": "Poison"
+    }
+  ],
+  "exp": 5900,
+  "hitDice": "15d10+45",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/monstrosity-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 127,
+  "movementModes": [
+    {
+      "distance": 40,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Guardian Naga",
+  "proficiencies": [
+    {
+      "name": "Dexterity",
+      "type": "save"
+    },
+    {
+      "name": "Constitution",
+      "type": "save"
+    },
+    {
+      "name": "Intelligence",
+      "type": "save"
+    },
+    {
+      "name": "Wisdom",
+      "type": "save"
+    },
+    {
+      "name": "Charisma",
+      "type": "save"
+    },
+    {
+      "name": "Celestial",
+      "type": "language"
+    },
+    {
+      "name": "Common",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 4,
+  "race": "NPC",
+  "senses": [
+    {
+      "distance": 60,
+      "name": "Darkvision"
+    }
+  ],
+  "size": "Large",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 4,
+      "remaining": 4
+    },
+    {
+      "max": 3,
+      "remaining": 3
+    },
+    {
+      "max": 3,
+      "remaining": 3
+    },
+    {
+      "max": 3,
+      "remaining": 3
+    },
+    {
+      "max": 2,
+      "remaining": 2
+    },
+    {
+      "max": 1,
+      "remaining": 1
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "wis",
+  "spells": [
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a Charisma saving throw; a creature can choose to fail this saving throw if it wishes. If a creature fails its saving throw, choose one of the following two effects.\n\nYou can suppress any effect causing a target to be charmed or frightened. When this spell ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.\n\nAlternatively, you can make a target indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the spell ends, the creature becomes hostile again, unless the DM rules otherwise.",
+      "duration": "Up to 1 minute",
+      "level": 2,
+      "name": "Calm Emotions",
+      "range": "60 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "cha"
+      },
+      "school": "Enchantment",
+      "tags": [
+        "bard",
+        "cleric"
+      ]
+    },
+    {
+      "castingTime": "1 minute",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "This spell repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.\n\nThis spell can physically repair a magic item or construct, but the spell can't restore magic to such an object.",
+      "duration": "Instantaneous",
+      "level": 0,
+      "materials": "two lodestones ",
+      "name": "Mending",
+      "range": "Touch",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "Radiant"
+        }
+      ],
+      "description": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.\n\nThe spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            5,
+            11,
+            17
+          ],
+          "damage": {
+            "dice": "1d8",
+            "type": "Radiant"
+          },
+          "type": "at-character-level"
+        }
+      ],
+      "level": 0,
+      "name": "Sacred Flame",
+      "range": "60 ft.",
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Cleric"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V"
+      ],
+      "description": "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:\n\n*Your voice booms up to three times as loud as normal for 1 minute.\n\n*You cause flames to flicker, brighten, dim, or change color for 1 minute.\n\n*You cause harmless tremors in the ground for 1 minute.\n\n*You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.\n\n*You instantaneously cause an unlocked door or window to fly open or slam shut.\n\n*You alter the appearance of your eyes for 1 minute.\n\nIf you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.",
+      "duration": "Up to 1 minute",
+      "level": 0,
+      "name": "Thaumaturgy",
+      "range": "30 ft.",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Cleric"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V"
+      ],
+      "description": "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.\n\nSome typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.\n\nApproach. The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.\n\nDrop. The target drops whatever it is holding and then ends its turn.\n\nFlee. The target spends its turn moving away from you by the fastest available means.\n\nGrovel. The target falls prone and then ends its turn.\n\nHalt. The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
+      "duration": "1 round",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
+      "level": 1,
+      "name": "Command",
+      "range": "60 ft.",
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Enchantment",
+      "tags": [
+        "Cleric",
+        "Paladin"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "abilityName": "spl",
+          "dice": "1d8",
+          "type": "Healing"
+        }
+      ],
+      "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            2
+          ],
+          "damage": {
+            "abilityName": "spl",
+            "dice": "1d8",
+            "type": "Healing"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "level": 1,
+      "name": "Cure Wounds",
+      "range": "Touch",
+      "savingThrow": {
+      },
+      "school": "Evocation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger"
+      ]
+    },
+    {
+      "castingTime": "1 Bonus Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.",
+      "duration": "Up to 10 minutes",
+      "level": 1,
+      "materials": "a small parchment with a bit of holy text written on it ",
+      "name": "Shield of Faith",
+      "range": "60 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Abjuration",
+      "tags": [
+        "Cleric",
+        "Paladin"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.\n\nAt Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.",
+      "duration": "Up to 1 minute",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.",
+      "level": 2,
+      "materials": "a small, straight piece of iron",
+      "name": "Hold Person",
+      "range": "60 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Enchantment",
+      "tags": [
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "10 minutes",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can't be attacked or otherwise interacted with.\n\nWhen you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.\n\nA creature that can see the sensor (such as a creature benefiting from see invisibility or truesight) sees a luminous, intangible orb about the size of your fist.",
+      "duration": "Up to 10 minutes",
+      "level": 3,
+      "materials": "a focus worth at least 100 gp, either a jeweled horn for hearing or a glass eye for seeing",
+      "name": "Clairvoyance",
+      "range": "1 mile",
+      "requiresConcentration": true,
+      "school": "Divination",
+      "tags": [
+        "Bard",
+        "Cleric",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:\n\n*Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.\n\n*While cursed, the target has disadvantage on attack rolls against you.\n\n*While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.\n\n*While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target.\n\nA remove curse spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect.\n\nAt Higher Levels. If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require concentration.",
+      "duration": "Up to 1 minute",
+      "higherLevelDescription": "If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require concentration.",
+      "level": 3,
+      "name": "Bestow Curse",
+      "range": "Touch",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Necromancy",
+      "tags": [
+        "Bard",
+        "Cleric",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You touch a willing creature. For the duration, the target's movement is unaffected by difficult terrain, and spells and other magical effects can neither reduce the target's speed nor cause the target to be paralyzed or restrained.\n\nThe target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it grappled. Finally, being underwater imposes no penalties on the target's movement or attacks.",
+      "duration": "1 hour",
+      "level": 4,
+      "materials": "a leather strap, bound around the arm or a similar appendage",
+      "name": "Freedom of Movement",
+      "range": "Touch",
+      "school": "Abjuration",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Ranger"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 minute",
+      "components": [
+        "V"
+      ],
+      "damage": [
+        {
+          "dice": "5d10",
+          "type": "Psychic"
+        }
+      ],
+      "description": "You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell.\n\nYou can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.\n\nYou can end the spell early by using an action to dismiss it. A remove curse, greater restoration, or wish spell also ends it.\n\nAt Higher Levels. When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above.",
+      "duration": "30 days",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above.",
+      "level": 5,
+      "name": "Geas",
+      "range": "60 ft.",
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Enchantment",
+      "tags": [
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "damage": [
+        {
+          "dice": "4d6",
+          "type": "Fire"
+        },
+        {
+          "dice": "4d6",
+          "type": "Radiant"
+        }
+      ],
+      "description": "A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one.\n\nAt Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            6
+          ],
+          "damage": {
+            "dice": "1d6",
+            "type": "Radiant or Fire"
+          },
+          "type": "per-slot"
+        },
+        {
+          "applyAtLevels": [
+            6
+          ],
+          "damage": {
+            "dice": "1d6",
+            "type": "Radiant"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "level": 5,
+      "materials": "a pinch of sulfur",
+      "name": "Flame Strike",
+      "range": "60 ft.",
+      "rollsAttack": false,
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Cleric"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet.",
+      "duration": "1 hour",
+      "level": 6,
+      "materials": "an ointment for the eyes that costs 25 gp; is made from mushroom powder, saffron, and fat; and is consumed by the spell",
+      "name": "True Seeing",
+      "range": "Touch",
+      "school": "Divination",
+      "tags": [
+        "Bard",
+        "Cleric",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.\n\nIf the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is incapacitated. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.\n\nIf the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return.\n\nAt Higher Levels. When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.",
+      "duration": "Up to 1 minute",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.",
+      "level": 4,
+      "materials": "an item distasteful to the target",
+      "name": "Banishment",
+      "range": "60 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "cha"
+      },
+      "school": "Abjuration",
+      "tags": [
+        "Cleric",
+        "Paladin",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "If it dies, the naga returns to life in 1d6 days and regains all its hit points. Only a wish spell can prevent this trait from functioning.",
+          "title": "Rejuvenation"
+        },
+        {
+          "body": "The naga is an 11th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following cleric spells prepared:\n\nCantrips (at will): mending, sacred flame, thaumaturgy\n\n1st level (4 slots): command, cure wounds, shield of faith\n\n2nd level (3 slots): calm emotions, hold person\n\n3rd level (3 slots): bestow curse, clairvoyance\n\n4th level (3 slots): banishment, freedom of movement\n\n5th level (2 slots): flame strike, geas\n\n6th level (1 slot): true seeing",
+          "title": "Spellcasting"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Monstrosity"
+}

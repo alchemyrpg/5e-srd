@@ -1,0 +1,597 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 27
+    },
+    {
+      "name": "dex",
+      "value": 10
+    },
+    {
+      "name": "con",
+      "value": 22
+    },
+    {
+      "name": "int",
+      "value": 12
+    },
+    {
+      "name": "wis",
+      "value": 16
+    },
+    {
+      "name": "cha",
+      "value": 16
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 8) piercing damage.",
+      "name": "Morningstar",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "3d8",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Morningstar",
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Ranged Weapon Attack: +12 to hit, range 60/240 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage.\n",
+      "name": "Rock",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "4d10",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": true,
+            "longRange": 240,
+            "name": "Rock",
+            "range": 60,
+            "rollsAttack": true,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "The giant tries to throw a Small or Medium creature within 10 feet of it. The target must succeed on a DC 20 Dexterity saving throw or be hurled up to 60 feet horizontally in a direction of the giant's choice and land prone, taking 4 (1d8) bludgeoning damage for every 10 feet it was thrown.",
+      "name": "Fling",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "1d8",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Fling",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "dex",
+              "difficultyClass": 20
+            }
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Neutral Good (50%) or Neutral Evil (50%)",
+  "armorClass": 14,
+  "armorType": "Natural Armor",
+  "challengeRating": "9",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 200,
+  "exp": 5000,
+  "hitDice": "16d12+96",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/giant-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 200,
+  "movementModes": [
+    {
+      "distance": 40,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Cloud Giant",
+  "proficiencies": [
+    {
+      "name": "Constitution",
+      "type": "save"
+    },
+    {
+      "name": "Wisdom",
+      "type": "save"
+    },
+    {
+      "name": "Charisma",
+      "type": "save"
+    },
+    {
+      "name": "Common",
+      "type": "language"
+    },
+    {
+      "name": "Giant",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 4,
+  "race": "NPC",
+  "size": "Huge",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "cha",
+  "spells": [
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st.",
+      "duration": "Up to 1 hour",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st.",
+      "level": 1,
+      "name": "Fog Cloud",
+      "range": "120 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Conjuration",
+      "tags": [
+        "Druid",
+        "Ranger",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canBeCastAsRitual": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+      "duration": "Up to 10 minutes ",
+      "level": 1,
+      "name": "Detect Magic",
+      "range": "Self",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Divination",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Reaction",
+      "components": [
+        "V",
+        "M"
+      ],
+      "description": "Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.",
+      "duration": "1 minute",
+      "level": 1,
+      "materials": "a small feather or a piece of down",
+      "name": "Feather Fall",
+      "range": "60 ft.",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "M"
+      ],
+      "description": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.\n\nIf you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.",
+      "duration": "1 hour",
+      "level": 0,
+      "materials": "a firefly or phosphorescent moss",
+      "name": "Light",
+      "range": "Touch",
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Bonus Action",
+      "components": [
+        "V"
+      ],
+      "description": "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.",
+      "duration": "Instantaneous",
+      "level": 2,
+      "name": "Misty Step",
+      "range": "Self",
+      "school": "Conjuration",
+      "tags": [
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.\n\nAt Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.",
+      "duration": "Up to 10 minutes",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.",
+      "level": 3,
+      "materials": "a wing feather from any bird",
+      "name": "Fly",
+      "range": "Touch",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Artificer",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "10 minutes",
+      "components": [
+        "V",
+        "M",
+        "S"
+      ],
+      "description": "You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell early.\n\nWhen you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 × 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.\n\nWhen you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction.\n\nPrecipitation\nStage\tCondition\n1\t        Clear\n2\t        Light clouds\n3\t       Overcast or ground fog\n4\t        Rain, hail, or snow\n5\t        Torrential rain, driving hail, or blizzard\n\nTemperature\nStage\tCondition\n1\t        Unbearable heat\n2\t        Hot\n3\t        Warm\n4\t        Cool\n5\t        Cold\n6\t        Arctic cold\n\nWind\nStage\tCondition\n1\t        Calm\n2\t        Moderate wind\n3\t        Strong wind\n4\t        Gale\n5\t        Storm",
+      "duration": "Up to 8 hours",
+      "level": 8,
+      "materials": "burning incense and bits of earth and wood mixed in water",
+      "name": "Control Weather",
+      "range": "Self (5-mile radius)",
+      "requiresConcentration": true,
+      "school": "Transmutation",
+      "tags": [
+        "Cleric",
+        "Druid",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You transform a willing creature you touch, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isn't affected.\n\nWhile in this form, the target's only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when stunned or otherwise incapacitated.\n\nWhile in the form of a misty cloud, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. The target can't attack or cast spells.",
+      "duration": "Up to 1 hour",
+      "level": 3,
+      "materials": "a bit of gauze and a wisp of smoke",
+      "name": "Gaseous Form",
+      "range": "Touch",
+      "requiresConcentration": true,
+      "school": "Transmutation",
+      "tags": [
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell, and as your action each round for the duration, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.\n\nCreature. You can try to move a Huge or smaller creature. Make an ability check with your spellcasting ability contested by the creature's Strength check. If you win the contest, you move the creature up to 30 feet in any direction, including upward but not beyond the range of this spell. Until the end of your next turn, the creature is restrained in your telekinetic grip. A creature lifted upward is suspended in mid-air.\n   On subsequent rounds, you can use your action to attempt to maintain your telekinetic grip on the creature by repeating the contest.\n\nObject. You can try to move an object that weighs up to 1,000 pounds. If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction, but not beyond the range of this spell.\n   If the object is worn or carried by a creature, you must make an ability check with your spellcasting ability contested by that creature's Strength check. If you succeed, you pull the object away from that creature and can move it up to 30 feet in any direction but not beyond the range of this spell. \n   You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool, opening a door or a container, stowing or retrieving an item from an open container, or pouring the contents from a vial.",
+      "duration": "Up to 10 minutes",
+      "level": 5,
+      "name": "Telekinesis",
+      "range": "60 ft.",
+      "requiresConcentration": true,
+      "school": "Transmutation",
+      "tags": [
+        "Sorcerer",
+        "Wizard"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The giant's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components:\n\nAt will: detect magic, fog cloud, light\n\n3/day each: feather fall, fly, misty step, telekinesis\n\n1/day each: control weather, gaseous form",
+          "title": "Innate Spellcasting"
+        },
+        {
+          "body": "The giant has advantage on Wisdom (Perception) checks that rely on smell.",
+          "title": "Keen Smell"
+        },
+        {
+          "body": "The giant makes two morningstar attacks.",
+          "title": "Multiattack"
+        },
+        {
+          "body": "Some adult cloud giants have the magical ability to create barriers of gale-force wind around themselves that can deflect incoming missiles. Others like to fling enemies through the air. These abilities are represented by the following action options.\n\nFling. The giant tries to throw a Small or Medium creature within 10 feet of it. The target must succeed on a DC 20 Dexterity saving throw or be hurled up to 60 feet horizontally in a direction of the giant's choice and land prone, taking 4 (1d8) bludgeoning damage for every 10 feet it was thrown.\n\nWind Aura. A magical aura of wind surrounds the giant. The aura is a 10-foot-radius sphere that lasts as long as the giant maintains concentration on it (as if concentrating on a spell). While the aura is in effect, the giant gains a +2 bonus to its AC against ranged weapon attacks, and all open flames within the aura are extinguished unless they are magical.",
+          "title": "Variant: New Giant Options"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Giant"
+}

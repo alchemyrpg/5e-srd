@@ -1,0 +1,846 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 10
+    },
+    {
+      "name": "dex",
+      "value": 12
+    },
+    {
+      "name": "con",
+      "value": 13
+    },
+    {
+      "name": "int",
+      "value": 12
+    },
+    {
+      "name": "wis",
+      "value": 15
+    },
+    {
+      "name": "cha",
+      "value": 11
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, 4 (1d8) bludgeoning damage if wielded with two hands, or 6 (1d8 + 2) bludgeoning damage with shillelagh.",
+      "name": "Quarterstaff (1H)",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d6",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Quarterstaff (1H)"
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, 4 (1d8) bludgeoning damage if wielded with two hands, or 6 (1d8 + 2) bludgeoning damage with shillelagh.",
+      "name": "Quarterstaff (2H)",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "1d8",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Quarterstaff (2H)"
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, 4 (1d8) bludgeoning damage if wielded with two hands, or 6 (1d8 + 2) bludgeoning damage with shillelagh.",
+      "name": "Quarterstaff (Shillelagh)",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "ability": "wis",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "wis",
+                "dice": "1d8",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Quarterstaff (Shillelagh)"
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Any Alignment",
+  "armorClass": 11,
+  "challengeRating": "2",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 27,
+  "exp": 450,
+  "hitDice": "5d8+5",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/humanoid-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 27,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Druid",
+  "proficiencies": [
+    {
+      "name": "Druidic",
+      "type": "language"
+    },
+    {
+      "name": "Any Two",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 2,
+  "race": "NPC",
+  "size": "Medium",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": true
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": true
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": true
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 4,
+      "remaining": 4
+    },
+    {
+      "max": 3,
+      "remaining": 3
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "wis",
+  "spells": [
+    {
+      "canBeCastAsRitual": true,
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as \"a man or woman dressed in the uniform of the town guard\" or \"a red-haired dwarf wearing a pointed hat.\" You also speak a message of up to twenty-five words. The target beast travels for the duration of the spell toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals.\n\nWhen the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn't reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell.\n\nAt Higher Levels. If you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd.",
+      "duration": "24 hours",
+      "higherLevelDescription": "If you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd.",
+      "level": 2,
+      "materials": "a morsel of food",
+      "name": "Animal Messenger",
+      "range": "30 ft.",
+      "savingThrow": {
+      },
+      "school": "Enchantment",
+      "tags": [
+        "bard",
+        "druid",
+        "ranger"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing.",
+      "duration": "Up to 1 hour",
+      "level": 2,
+      "materials": "a handful of oak bark",
+      "name": "Barkskin",
+      "range": "Touch",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "druid",
+        "ranger"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "Whispering to the spirits of nature, you create one of the following effects within range: \n\n* You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round. \n\n* You instantly make a flower blossom, a seed pod open, or a leaf bud bloom. \n\n* You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube. \n\n* You instantly light or snuff out a candle, a torch, or a small campfire.",
+      "duration": "Instantaneous",
+      "level": 0,
+      "name": "Druidcraft",
+      "range": "30 ft.",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Druid"
+      ]
+    },
+    {
+      "castingTime": "1 Bonus Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.",
+      "duration": "1 minute",
+      "level": 0,
+      "materials": "mistletoe, a shamrock leaf, and a club or quarterstaff",
+      "name": "Shillelagh",
+      "range": "Touch",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Druid"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "Fire"
+        }
+      ],
+      "description": "A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.\n\nYou can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage.\n\nThis spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+      "duration": "10 minutes",
+      "higherLevelDescription": "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            5,
+            11,
+            17
+          ],
+          "damage": {
+            "dice": "1d8",
+            "type": "Fire"
+          },
+          "type": "at-character-level"
+        }
+      ],
+      "level": 0,
+      "name": "Produce Flame",
+      "range": "Self",
+      "rollsAttack": true,
+      "savingThrow": {
+      },
+      "school": "Conjuration",
+      "tags": [
+        "Druid"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.\n\nA creature in the area when you cast the spell must succeed on a Strength saving throw or be restrained by the entangling plants until the spell ends. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.\n\nWhen the spell ends, the conjured plants wilt away.",
+      "duration": "Up to 1 minute",
+      "level": 1,
+      "name": "Entangle",
+      "range": "90 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "str"
+      },
+      "school": "Conjuration",
+      "tags": [
+        "Druid"
+      ]
+    },
+    {
+      "canBeCastAsRitual": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM's discretion.",
+      "duration": "10 minutes",
+      "level": 1,
+      "name": "Speak with Animals",
+      "range": "Self",
+      "savingThrow": {
+      },
+      "school": "Divination",
+      "tags": [
+        "Bard",
+        "Druid",
+        "Ranger",
+        "barbarian"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You touch a creature. The target's speed increases by 10 feet until the spell ends.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+      "duration": "1 hour",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+      "level": 1,
+      "materials": "a pinch of dirt",
+      "name": "Longstrider",
+      "range": "Touch",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Druid",
+        "Ranger",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "Thunder"
+        }
+      ],
+      "description": "A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.\n\nIn addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            2
+          ],
+          "damage": {
+            "dice": "1d8",
+            "type": "Thunder"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "level": 1,
+      "name": "Thunderwave",
+      "range": "Self (15-foot cube)",
+      "rollsAttack": false,
+      "savingThrow": {
+        "abilityName": "CON"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Bard",
+        "Druid",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "Whispering to the spirits of nature, you create one of the following effects within range: \n\n* You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round. \n* You instantly make a flower blossom, a seed pod open, or a leaf bud bloom. \n* You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube. \n* You instantly light or snuff out a candle, a torch, or a small campfire.",
+      "duration": "Instantaneous",
+      "isDeleted": true,
+      "level": 0,
+      "name": "Druidcraft",
+      "range": "30 ft.",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Druid"
+      ]
+    },
+    {
+      "castingTime": "1 Bonus Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.",
+      "duration": "1 minute",
+      "isDeleted": true,
+      "level": 0,
+      "materials": "mistletoe, a shamrock leaf, and a club or quarterstaff",
+      "name": "Shillelagh",
+      "range": "Touch",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Druid"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "dice": "1d8",
+          "type": "Fire"
+        }
+      ],
+      "description": "A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.\n\nYou can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage.\n\nThis spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+      "duration": "10 minutes",
+      "higherLevelDescription": "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            5,
+            11,
+            17
+          ],
+          "damage": {
+            "dice": "1d8",
+            "type": "Fire"
+          },
+          "type": "at-character-level"
+        }
+      ],
+      "isDeleted": true,
+      "level": 0,
+      "name": "Produce Flame",
+      "range": "Self",
+      "rollsAttack": true,
+      "school": "Conjuration",
+      "tags": [
+        "Druid"
+      ]
+    },
+    {
+      "canBeCastAsRitual": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM's discretion.",
+      "duration": "10 minutes",
+      "isDeleted": true,
+      "level": 1,
+      "name": "Speak with Animals",
+      "range": "Self",
+      "school": "Divination",
+      "tags": [
+        "Bard",
+        "Druid",
+        "Ranger"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.\n\nA creature in the area when you cast the spell must succeed on a Strength saving throw or be restrained by the entangling plants until the spell ends. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.\n\nWhen the spell ends, the conjured plants wilt away.",
+      "duration": "Up to 1 minute",
+      "isDeleted": true,
+      "level": 1,
+      "name": "Entangle",
+      "range": "90 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "str"
+      },
+      "school": "Conjuration",
+      "tags": [
+        "Druid"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You touch a creature. The target's speed increases by 10 feet until the spell ends.\n\nWhen you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+      "duration": "1 hour",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            2
+          ],
+          "damage": {
+            "dice": "undefineddundefined",
+            "type": "Acid"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "isDeleted": true,
+      "level": 1,
+      "materials": "a pinch of dirt",
+      "name": "Longstrider",
+      "range": "Touch",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Druid",
+        "Ranger",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "Thunder"
+        }
+      ],
+      "description": "A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.\n\nIn addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.\n\nWhen you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            2
+          ],
+          "damage": {
+            "dice": "1d8",
+            "type": "Thunder"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "isDeleted": true,
+      "level": 1,
+      "name": "Thunderwave",
+      "range": "Self (15-foot cube)",
+      "rollsAttack": false,
+      "savingThrow": {
+        "abilityName": "CON"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Bard",
+        "Druid",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canBeCastAsRitual": true,
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as \"a man or woman dressed in the uniform of the town guard\" or \"a red-haired dwarf wearing a pointed hat.\" You also speak a message of up to twenty-five words. The target beast travels for the duration of the spell toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals.\n\nWhen the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn't reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell.\n\nIf you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd.",
+      "duration": "24 hours",
+      "higherLevelDescription": "If you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd.",
+      "isDeleted": true,
+      "level": 2,
+      "materials": "a morsel of food",
+      "name": "Animal Messenger",
+      "range": "30 ft.",
+      "savingThrow": {
+      },
+      "school": "Enchantment",
+      "tags": [
+        "bard",
+        "druid",
+        "ranger"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing.",
+      "duration": "Up to 1 hour",
+      "isDeleted": true,
+      "level": 2,
+      "materials": "a handful of oak bark",
+      "name": "Barkskin",
+      "range": "Touch",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "druid",
+        "ranger"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared:\nCantrips (at will): druidcraft, produce flame, shillelagh\n1st level (4 slots): entangle, longstrider, speak with animals, thunderwave\n2nd level (3 slots): animal messenger, barkskin",
+          "title": "Spellcasting"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Humanoid",
+  "typeTags": [
+    "Any Race"
+  ]
+}

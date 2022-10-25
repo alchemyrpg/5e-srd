@@ -1,0 +1,582 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 29
+    },
+    {
+      "name": "dex",
+      "value": 14
+    },
+    {
+      "name": "con",
+      "value": 20
+    },
+    {
+      "name": "int",
+      "value": 16
+    },
+    {
+      "name": "wis",
+      "value": 18
+    },
+    {
+      "name": "cha",
+      "value": 18
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 30 (6d6 + 9) slashing damage.",
+      "name": "Greatsword",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "6d6",
+                "type": "Slashing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Greatsword",
+            "rollsAttack": true
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Ranged Weapon Attack: +14 to hit, range 60/240 ft., one target. Hit: 35 (4d12 + 9) bludgeoning damage.",
+      "name": "Rock",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "str",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "str",
+                "dice": "4d12",
+                "type": "Bludgeoning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": true,
+            "longRange": 240,
+            "name": "Rock",
+            "range": 60,
+            "rollsAttack": true
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a DC 17 Dexterity saving throw, taking 54 (12d8) lightning damage on a failed save, or half as much damage on a successful one.",
+      "name": "Lightning Strike (Recharge 5-6)",
+      "sortOrder": 2,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "12d8",
+                "type": "Lightning"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Lightning Strike (Recharge 5-6)",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "dex",
+              "difficultyClass": 17
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "The storm giant stomps the ground, triggering a thunderclap. All other creatures within 15 feet of the giant must succeed on a DC 17 Constitution saving throw or take 33 (6d10) thunder damage and be deafened until the start of the giant's next turn. On a successful save, a creature takes half as much damage and isn't deafened. The thunderclap can be heard out to a range of 1,200 feet.",
+      "name": "Thunderous Stomp (Recharge 6)",
+      "sortOrder": 3,
+      "steps": [
+        {
+          "attack": {
+            "crit": 20,
+            "damageRolls": [
+              {
+                "dice": "6d10",
+                "type": "Thunder"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Thunderous Stomp (Recharge 6)",
+            "rollsAttack": false,
+            "savingThrow": {
+              "abilityName": "CON",
+              "difficultyClass": 17
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Chaotic Good",
+  "armorClass": 16,
+  "armorType": "Scale Mail",
+  "challengeRating": "13",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 230,
+  "damageImmunities": [
+    {
+      "damageType": "Lightning"
+    },
+    {
+      "damageType": "Thunder"
+    }
+  ],
+  "damageResistances": [
+    {
+      "damageType": "Cold"
+    }
+  ],
+  "exp": 10000,
+  "hitDice": "20d12+100",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/giant-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 230,
+  "movementModes": [
+    {
+      "distance": 50,
+      "mode": "Walking"
+    },
+    {
+      "distance": 50,
+      "mode": "Swim"
+    }
+  ],
+  "name": "Storm Giant",
+  "proficiencies": [
+    {
+      "name": "Strength",
+      "type": "save"
+    },
+    {
+      "name": "Constitution",
+      "type": "save"
+    },
+    {
+      "name": "Wisdom",
+      "type": "save"
+    },
+    {
+      "name": "Charisma",
+      "type": "save"
+    },
+    {
+      "name": "Common",
+      "type": "language"
+    },
+    {
+      "name": "Giant",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 5,
+  "race": "NPC",
+  "size": "Huge",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "cha",
+  "spells": [
+    {
+      "canBeCastAsRitual": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+      "duration": "Up to 10 minutes ",
+      "level": 1,
+      "name": "Detect Magic",
+      "range": "Self",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Divination",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Reaction",
+      "components": [
+        "V",
+        "M"
+      ],
+      "description": "Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.",
+      "duration": "1 minute",
+      "level": 1,
+      "materials": "a small feather or a piece of down",
+      "name": "Feather Fall",
+      "range": "60 ft.",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "M"
+      ],
+      "description": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.\n\nIf you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.",
+      "duration": "1 hour",
+      "level": 0,
+      "materials": "a firefly or phosphorescent moss",
+      "name": "Light",
+      "range": "Touch",
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "One creature or loose object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected.\n\nThe target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target's altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell's range.\n\nWhen the spell ends, the target floats gently to the ground if it is still aloft.",
+      "duration": "Up to 10 minutes",
+      "level": 2,
+      "materials": "either a small leather loop or a piece of golden wire bent into a cup shape with a long shank on one end",
+      "name": "Levitate",
+      "range": "60 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "CON"
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Artificer",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "10 minutes",
+      "components": [
+        "V",
+        "M",
+        "S"
+      ],
+      "description": "You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell early.\n\nWhen you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 × 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.\n\nWhen you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction.\n\nPrecipitation\nStage\tCondition\n1\t        Clear\n2\t        Light clouds\n3\t       Overcast or ground fog\n4\t        Rain, hail, or snow\n5\t        Torrential rain, driving hail, or blizzard\n\nTemperature\nStage\tCondition\n1\t        Unbearable heat\n2\t        Hot\n3\t        Warm\n4\t        Cool\n5\t        Cold\n6\t        Arctic cold\n\nWind\nStage\tCondition\n1\t        Calm\n2\t        Moderate wind\n3\t        Strong wind\n4\t        Gale\n5\t        Storm",
+      "duration": "Up to 8 hours",
+      "level": 8,
+      "materials": "burning incense and bits of earth and wood mixed in water",
+      "name": "Control Weather",
+      "range": "Self (5-mile radius)",
+      "requiresConcentration": true,
+      "school": "Transmutation",
+      "tags": [
+        "Cleric",
+        "Druid",
+        "Wizard"
+      ]
+    },
+    {
+      "canBeCastAsRitual": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "This spell grants up to ten willing creatures you can see within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration.",
+      "duration": "24 hours",
+      "level": 3,
+      "materials": "a short reed or piece of straw",
+      "name": "Water Breathing",
+      "range": "30 ft.",
+      "school": "Transmutation",
+      "tags": [
+        "Artificer",
+        "Druid",
+        "Ranger",
+        "Sorcerer",
+        "Wizard"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The giant can breathe air and water.",
+          "title": "Amphibious"
+        },
+        {
+          "body": "The giant's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components:\n\nAt will: detect magic, feather fall, levitate, light\n\n3/day each: control weather, water breathing",
+          "title": "Innate Spellcasting"
+        },
+        {
+          "body": "The giant makes two greatsword attacks.",
+          "title": "Multiattack"
+        },
+        {
+          "body": "Some adult storm giants can channel thunderous power through their bodies and release it with a deafening stomp. This ability is represented by the following action option.\n \nThunderous Stomp (Recharge 6). The storm giant stomps the ground, triggering a thunderclap. All other creatures within 15 feet of the giant must succeed on a DC 17 Constitution saving throw or take 33 (6d10) thunder damage and be deafened until the start of the giant's next turn. On a successful save, a creature takes half as much damage and isn't deafened. The thunderclap can be heard out to a range of 1,200 feet.\nSource: SKT, page 246",
+          "title": "Variant: New Giant Options"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Giant"
+}

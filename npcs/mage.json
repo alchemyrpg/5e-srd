@@ -1,0 +1,1292 @@
+{
+  "abilityScores": [
+    {
+      "name": "str",
+      "value": 9
+    },
+    {
+      "name": "dex",
+      "value": 14
+    },
+    {
+      "name": "con",
+      "value": 11
+    },
+    {
+      "name": "int",
+      "value": 17
+    },
+    {
+      "name": "wis",
+      "value": 12
+    },
+    {
+      "name": "cha",
+      "value": 11
+    }
+  ],
+  "actions": [
+    {
+      "description": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+      "name": "Dagger",
+      "sortOrder": 0,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "1d4",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": false,
+            "name": "Dagger"
+          },
+          "type": "custom-attack"
+        }
+      ]
+    },
+    {
+      "description": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+      "name": "Dagger (Thrown)",
+      "sortOrder": 1,
+      "steps": [
+        {
+          "attack": {
+            "ability": "dex",
+            "crit": 20,
+            "damageRolls": [
+              {
+                "abilityName": "dex",
+                "dice": "1d4",
+                "type": "Piercing"
+              }
+            ],
+            "isProficient": true,
+            "isRanged": true,
+            "longRange": 60,
+            "name": "Dagger (Thrown)",
+            "range": 20,
+            "savingThrow": {
+            }
+          },
+          "journalCommand": {
+          },
+          "skillCheck": {
+          },
+          "type": "custom-attack"
+        }
+      ]
+    }
+  ],
+  "alignment": "Any Alignment",
+  "armorClass": 12,
+  "challengeRating": "6",
+  "classes": [
+    {
+      "class": "Monster",
+      "level": 1
+    }
+  ],
+  "currentHp": 40,
+  "exp": 2300,
+  "hitDice": "9d8",
+  "imageUri": "https://cdn.alchemyrpg.com/app-assets/humanoid-token.svg",
+  "initiativeBonus": 0,
+  "isNPC": true,
+  "isSpellcaster": true,
+  "maxHp": 40,
+  "movementModes": [
+    {
+      "distance": 30,
+      "mode": "Walking"
+    }
+  ],
+  "name": "Mage",
+  "proficiencies": [
+    {
+      "name": "Intelligence",
+      "type": "save"
+    },
+    {
+      "name": "Wisdom",
+      "type": "save"
+    },
+    {
+      "name": "Any Four",
+      "type": "language"
+    }
+  ],
+  "proficiencyBonus": 3,
+  "race": "NPC",
+  "size": "Medium",
+  "skills": [
+    {
+      "abilityName": "dex",
+      "name": "Acrobatics",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Animal Handling",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Arcana",
+      "proficient": false
+    },
+    {
+      "abilityName": "str",
+      "name": "Athletics",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Deception",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "History",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Insight",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Intimidation",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Investigation",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Medicine",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Nature",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Perception",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Performance",
+      "proficient": false
+    },
+    {
+      "abilityName": "cha",
+      "name": "Persuasion",
+      "proficient": false
+    },
+    {
+      "abilityName": "int",
+      "name": "Religion",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Sleight of Hand",
+      "proficient": false
+    },
+    {
+      "abilityName": "dex",
+      "name": "Stealth",
+      "proficient": false
+    },
+    {
+      "abilityName": "wis",
+      "name": "Survival",
+      "proficient": false
+    }
+  ],
+  "speed": 30,
+  "spellFilters": [
+    "Known"
+  ],
+  "spellSlots": [
+    {
+      "max": 4,
+      "remaining": 4
+    },
+    {
+      "max": 3,
+      "remaining": 3
+    },
+    {
+      "max": 3,
+      "remaining": 3
+    },
+    {
+      "max": 3,
+      "remaining": 3
+    },
+    {
+      "max": 1,
+      "remaining": 1
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    },
+    {
+      "max": 0,
+      "remaining": 0
+    }
+  ],
+  "spellcastingAbility": "int",
+  "spells": [
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "bonus": 1,
+          "dice": "1d4",
+          "type": "Force"
+        },
+        {
+          "bonus": 1,
+          "dice": "1d4",
+          "type": "Force"
+        },
+        {
+          "bonus": 1,
+          "dice": "1d4",
+          "type": "Force"
+        }
+      ],
+      "description": "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.\n\nAt Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            2
+          ],
+          "damage": {
+            "bonus": 1,
+            "dice": "1d4",
+            "type": "Force"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "level": 1,
+      "name": "Magic Missile",
+      "range": "120 ft.",
+      "rollsAttack": false,
+      "savingThrow": {
+      },
+      "school": "Evocation",
+      "tags": [
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "dice": "1d10",
+          "type": "Fire"
+        }
+      ],
+      "description": "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried. \n\nThis spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            5,
+            11,
+            17
+          ],
+          "damage": {
+            "dice": "1d10",
+            "type": "Fire"
+          },
+          "type": "at-character-level"
+        }
+      ],
+      "level": 0,
+      "name": "Fire Bolt",
+      "range": "120 ft.",
+      "rollsAttack": true,
+      "savingThrow": {
+      },
+      "school": "Evocation",
+      "tags": [
+        "Artificer",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.\n\nYou can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.\n\nThe hand can't attack, activate magic items, or carry more than 10 pounds.",
+      "duration": "1 minute",
+      "level": 0,
+      "name": "Mage Hand",
+      "range": "30 ft.",
+      "school": "Conjuration",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:\n\n*You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.\n\n*You instantaneously light or snuff out a candle, a torch, or a small campfire.\n\n*You instantaneously clean or soil an object no larger than 1 cubic foot.\n\n*You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.\n\n*You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.\n\n*You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.\n\nIf you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+      "duration": "Up to 1 hour",
+      "level": 0,
+      "name": "Prestidigitation",
+      "range": "10 ft.",
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "canBeCastAsRitual": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+      "duration": "Up to 10 minutes ",
+      "level": 1,
+      "name": "Detect Magic",
+      "range": "Self",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Divination",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Reaction",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.",
+      "duration": "1 round",
+      "level": 1,
+      "name": "Shield",
+      "range": "Self",
+      "school": "Abjuration",
+      "tags": [
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.",
+      "duration": "8 hours",
+      "level": 1,
+      "materials": "a piece of cured leather",
+      "name": "Mage Armor",
+      "range": "Touch",
+      "savingThrow": {
+      },
+      "school": "Abjuration",
+      "tags": [
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "damage": [
+        {
+          "dice": "8d6",
+          "type": "Fire"
+        }
+      ],
+      "description": "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.\n\nAt Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            4
+          ],
+          "damage": {
+            "dice": "1d6",
+            "type": "Fire"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "level": 3,
+      "materials": "a tiny ball of bat guano and sulfur",
+      "name": "Fireball",
+      "range": "150 ft. / 20 ft. sphere",
+      "rollsAttack": false,
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "M"
+      ],
+      "description": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.\n\nIf you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.",
+      "duration": "1 hour",
+      "level": 0,
+      "materials": "a firefly or phosphorescent moss",
+      "name": "Light",
+      "range": "Touch",
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Reaction",
+      "components": [
+        "S"
+      ],
+      "description": "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.\n\nAt Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.",
+      "level": 3,
+      "name": "Counterspell",
+      "range": "60 ft.",
+      "savingThrow": {
+      },
+      "school": "Abjuration",
+      "tags": [
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "damage": [
+        {
+          "dice": "8d8",
+          "type": "Cold"
+        }
+      ],
+      "description": "A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.\n\nA creature killed by this spell becomes a frozen statue until it thaws.\n\nAt Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            6
+          ],
+          "damage": {
+            "dice": "1d8",
+            "type": "Cold"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "level": 5,
+      "materials": "a small crystal or glass cone",
+      "name": "Cone of Cold",
+      "range": "Self (60-foot cone)",
+      "rollsAttack": false,
+      "savingThrow": {
+        "abilityName": "CON"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Damage",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Bonus Action",
+      "components": [
+        "V"
+      ],
+      "description": "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.",
+      "duration": "Instantaneous",
+      "level": 2,
+      "name": "Misty Step",
+      "range": "Self",
+      "school": "Conjuration",
+      "tags": [
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person.",
+      "duration": "Up to 1 minute",
+      "level": 4,
+      "name": "Greater Invisibility",
+      "range": "Touch",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Illusion",
+      "tags": [
+        "Bard",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "Bludgeoning"
+        },
+        {
+          "dice": "4d6",
+          "type": "Cold"
+        }
+      ],
+      "description": "A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.\n\nHailstones turn the storm's area of effect into difficult terrain until the end of your next turn.\n\nAt Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            5
+          ],
+          "damage": {
+            "dice": "1d8",
+            "type": "Bludgeoning"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "level": 4,
+      "materials": "a pinch of dust and a few drops of water",
+      "name": "Ice Storm",
+      "range": "300 ft.",
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Druid",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "M"
+      ],
+      "description": "You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.\n\nThe target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.\n\nYou can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn't met before the spell expires, the activity isn't performed.\n\nIf you or any of your companions damage the target, the spell ends.",
+      "duration": "Up to 8 hours",
+      "level": 2,
+      "materials": "a snake's tongue and either a bit of honeycomb or a drop of sweet oil",
+      "name": "Suggestion",
+      "range": "30 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Enchantment",
+      "tags": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.\n\nAt Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.",
+      "duration": "Up to 10 minutes",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.",
+      "level": 3,
+      "materials": "a wing feather from any bird",
+      "name": "Fly",
+      "range": "Touch",
+      "requiresConcentration": true,
+      "savingThrow": {
+      },
+      "school": "Transmutation",
+      "tags": [
+        "Artificer",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "dice": "1d10",
+          "type": "Fire"
+        }
+      ],
+      "description": "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried. \n\nThis spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            5,
+            11,
+            17
+          ],
+          "damage": {
+            "dice": "1d10",
+            "type": "Fire"
+          },
+          "type": "at-character-level"
+        }
+      ],
+      "isDeleted": true,
+      "level": 0,
+      "name": "Fire Bolt",
+      "range": "120 ft.",
+      "rollsAttack": true,
+      "savingThrow": {
+      },
+      "school": "Evocation",
+      "tags": [
+        "Artificer",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "M"
+      ],
+      "description": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.\n\nIf you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.",
+      "duration": "1 hour",
+      "isDeleted": true,
+      "level": 0,
+      "materials": "a firefly or phosphorescent moss",
+      "name": "Light",
+      "range": "Touch",
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.\n\nYou can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.\n\nThe hand can't attack, activate magic items, or carry more than 10 pounds.",
+      "duration": "1 minute",
+      "isDeleted": true,
+      "level": 0,
+      "name": "Mage Hand",
+      "range": "30 ft.",
+      "school": "Conjuration",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:\n\n*You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.\n*You instantaneously light or snuff out a candle, a torch, or a small campfire.\n*You instantaneously clean or soil an object no larger than 1 cubic foot.\n*You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.\n*You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.\n*You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.\n\nIf you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+      "duration": "Up to 1 hour",
+      "isDeleted": true,
+      "level": 0,
+      "name": "Prestidigitation",
+      "range": "10 ft.",
+      "school": "Transmutation",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Reaction",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.",
+      "duration": "1 round",
+      "isDeleted": true,
+      "level": 1,
+      "name": "Shield",
+      "range": "Self",
+      "school": "Abjuration",
+      "tags": [
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.",
+      "duration": "8 hours",
+      "isDeleted": true,
+      "level": 1,
+      "materials": "a piece of cured leather",
+      "name": "Mage Armor",
+      "range": "Touch",
+      "savingThrow": {
+      },
+      "school": "Abjuration",
+      "tags": [
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "damage": [
+        {
+          "bonus": 1,
+          "dice": "1d4",
+          "type": "Force"
+        },
+        {
+          "bonus": 1,
+          "dice": "1d4",
+          "type": "Force"
+        },
+        {
+          "bonus": 1,
+          "dice": "1d4",
+          "type": "Force"
+        }
+      ],
+      "description": "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.\n\nWhen you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            2
+          ],
+          "damage": {
+            "bonus": 1,
+            "dice": "1d4",
+            "type": "Force"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "isDeleted": true,
+      "level": 1,
+      "name": "Magic Missile",
+      "range": "120 ft.",
+      "rollsAttack": true,
+      "savingThrow": {
+      },
+      "school": "Evocation",
+      "tags": [
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.\n\nThe spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+      "duration": "Up to 10 minutes ",
+      "isDeleted": true,
+      "level": 1,
+      "name": "Detect Magic",
+      "range": "Self",
+      "requiresConcentration": true,
+      "school": "Divination",
+      "tags": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Ranger",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Bonus Action",
+      "components": [
+        "V"
+      ],
+      "description": "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.",
+      "duration": "Instantaneous",
+      "isDeleted": true,
+      "level": 2,
+      "name": "Misty Step",
+      "range": "Self",
+      "school": "Conjuration",
+      "tags": [
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "M"
+      ],
+      "description": "You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.\n\nThe target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.\n\nYou can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn't met before the spell expires, the activity isn't performed.\n\nIf you or any of your companions damage the target, the spell ends.",
+      "duration": "up to 8 hours",
+      "isDeleted": true,
+      "level": 2,
+      "materials": "a snake's tongue and either a bit of honeycomb or a drop of sweet oil",
+      "name": "Suggestion",
+      "range": "30 ft.",
+      "requiresConcentration": true,
+      "savingThrow": {
+        "abilityName": "wis"
+      },
+      "school": "Enchantment",
+      "tags": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "description": "You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.\n\nAt Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.",
+      "duration": "10 minutes",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.",
+      "isDeleted": true,
+      "level": 3,
+      "materials": "a wing feather from any bird",
+      "name": "Fly",
+      "range": "Touch",
+      "requiresConcentration": true,
+      "school": "Transmutation",
+      "tags": [
+        "Artificer",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Reaction",
+      "components": [
+        "S"
+      ],
+      "description": "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.\n\nAt Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.",
+      "isDeleted": true,
+      "level": 3,
+      "name": "Counterspell",
+      "range": "60 ft.",
+      "savingThrow": {
+      },
+      "school": "Abjuration",
+      "tags": [
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "damage": [
+        {
+          "dice": "8d6",
+          "type": "Fire"
+        }
+      ],
+      "description": "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.\n\nAt Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            4
+          ],
+          "damage": {
+            "dice": "1d6",
+            "type": "Fire"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "isDeleted": true,
+      "level": 3,
+      "materials": "a tiny ball of bat guano and sulfur",
+      "name": "Fireball",
+      "range": "150 ft. / 20 ft. sphere",
+      "rollsAttack": false,
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "damage": [
+        {
+          "dice": "2d8",
+          "type": "Bludgeoning"
+        },
+        {
+          "dice": "4d6",
+          "type": "Cold"
+        }
+      ],
+      "description": "A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.\n\nHailstones turn the storm's area of effect into difficult terrain until the end of your next turn.\n\nAt Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            5
+          ],
+          "damage": {
+            "dice": "1d8",
+            "type": "Bludgeoning"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "isDeleted": true,
+      "level": 4,
+      "materials": "a pinch of dust and a few drops of water",
+      "name": "Ice Storm",
+      "range": "300 ft.",
+      "savingThrow": {
+        "abilityName": "dex"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Druid",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S"
+      ],
+      "description": "You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person.",
+      "duration": "1 minute",
+      "isDeleted": true,
+      "level": 4,
+      "name": "Greater Invisibility",
+      "range": "Touch",
+      "school": "Illusion",
+      "tags": [
+        "Bard",
+        "Sorcerer",
+        "Wizard"
+      ]
+    },
+    {
+      "canCastAtHigherLevel": true,
+      "castingTime": "1 Action",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "damage": [
+        {
+          "dice": "8d8",
+          "type": "Cold"
+        }
+      ],
+      "description": "A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one.\n\nA creature killed by this spell becomes a frozen statue until it thaws.\n\nAt Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
+      "duration": "Instantaneous",
+      "higherLevelDescription": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
+      "higherLevels": [
+        {
+          "applyAtLevels": [
+            6
+          ],
+          "damage": {
+            "dice": "1d8",
+            "type": "Cold"
+          },
+          "type": "per-slot"
+        }
+      ],
+      "isDeleted": true,
+      "level": 5,
+      "materials": "a small crystal or glass cone",
+      "name": "Cone of Cold",
+      "range": "Self (60-foot cone)",
+      "rollsAttack": false,
+      "savingThrow": {
+        "abilityName": "CON"
+      },
+      "school": "Evocation",
+      "tags": [
+        "Damage",
+        "Sorcerer",
+        "Wizard"
+      ]
+    }
+  ],
+  "textBlocks": [
+    {
+      "title": "Class Features"
+    },
+    {
+      "title": "Racial Traits"
+    },
+    {
+      "title": "Feats"
+    },
+    {
+      "textBlocks": [
+        {
+        },
+        {
+        }
+      ],
+      "title": "Background"
+    },
+    {
+      "textBlocks": [
+        {
+          "title": "Personality Traits"
+        },
+        {
+          "title": "Ideals"
+        },
+        {
+          "title": "Bonds"
+        },
+        {
+          "title": "Flaws"
+        }
+      ],
+      "title": "Characteristics"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Appearance"
+    },
+    {
+      "title": "Organizations"
+    },
+    {
+      "title": "Allies"
+    },
+    {
+      "title": "Enemies"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Backstory"
+    },
+    {
+      "textBlocks": [
+        {
+        }
+      ],
+      "title": "Other"
+    },
+    {
+      "textBlocks": [
+        {
+          "body": "The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:\nCantrips (at will): fire bolt, light, mage hand, prestidigitation\n1st level (4 slots): detect magic, mage armor, magic missile, shield\n2nd level (3 slots): misty step, suggestion\n3rd level (3 slots): counterspell, fireball, fly\n4th level (3 slots): greater invisibility, ice storm\n5th level (1 slot): cone of cold",
+          "title": "Spellcasting"
+        },
+        {
+          "body": "Any spellcaster that can cast the find familiar spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a crawling claw, imp, pseudodragon, or quasit.",
+          "title": "Variant: Familiars"
+        }
+      ],
+      "title": "Abilities"
+    }
+  ],
+  "type": "Humanoid",
+  "typeTags": [
+    "Any Race"
+  ]
+}
