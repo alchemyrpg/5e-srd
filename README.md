@@ -5,3 +5,7 @@ Welcome! This repository contains various files from the 5e SRD in formats frien
 ## NPCs
 
 The SRD NPCs are available in the [`npcs`](/npcs) directory. Each NPC is available as an individual JSON document. There is also an [`_all.json`](/npcs/_all.json) file that contains all of the NPCs in a single document ready for bulk import.
+
+## License
+
+Please see the [LICENSE](./LICENSE) for the MIT and OGL licenses applicable to this repository.
