@@ -341,6 +341,7 @@
       ]
     }
   ],
+  "systemKey": "5e",
   "textBlocks": [
     {
       "title": "Class Features"
@@ -427,6 +428,22 @@
         }
       ],
       "title": "Abilities"
+    }
+  ],
+  "trackers": [
+    {
+      "color": "Yellow",
+      "max": 355000,
+      "name": "XP",
+      "type": "Bar",
+      "value": 50
+    },
+    {
+      "color": "Green",
+      "max": 13,
+      "name": "HP",
+      "type": "Bar",
+      "value": 13
     }
   ],
   "type": "Humanoid",

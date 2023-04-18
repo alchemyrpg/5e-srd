@@ -291,6 +291,7 @@
       ]
     }
   ],
+  "systemKey": "5e",
   "textBlocks": [
     {
       "title": "Class Features"
@@ -393,6 +394,22 @@
         }
       ],
       "title": "Abilities"
+    }
+  ],
+  "trackers": [
+    {
+      "color": "Yellow",
+      "max": 355000,
+      "name": "XP",
+      "type": "Bar",
+      "value": 700
+    },
+    {
+      "color": "Green",
+      "max": 82,
+      "name": "HP",
+      "type": "Bar",
+      "value": 82
     }
   ],
   "type": "Fey"

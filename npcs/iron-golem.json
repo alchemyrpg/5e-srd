@@ -280,6 +280,7 @@
     }
   ],
   "speed": 30,
+  "systemKey": "5e",
   "textBlocks": [
     {
       "title": "Class Features"
@@ -370,6 +371,22 @@
         }
       ],
       "title": "Abilities"
+    }
+  ],
+  "trackers": [
+    {
+      "color": "Yellow",
+      "max": 355000,
+      "name": "XP",
+      "type": "Bar",
+      "value": 15000
+    },
+    {
+      "color": "Green",
+      "max": 210,
+      "name": "HP",
+      "type": "Bar",
+      "value": 210
     }
   ],
   "type": "Construct"

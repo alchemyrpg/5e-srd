@@ -426,6 +426,7 @@
     }
   ],
   "speed": 30,
+  "systemKey": "5e",
   "textBlocks": [
     {
       "title": "Class Features"
@@ -536,6 +537,22 @@
         }
       ],
       "title": "Abilities"
+    }
+  ],
+  "trackers": [
+    {
+      "color": "Yellow",
+      "max": 355000,
+      "name": "XP",
+      "type": "Bar",
+      "value": 18000
+    },
+    {
+      "color": "Green",
+      "max": 256,
+      "name": "HP",
+      "type": "Bar",
+      "value": 256
     }
   ],
   "type": "Dragon"
